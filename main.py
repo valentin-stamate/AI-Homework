@@ -1,73 +1,93 @@
 import re
 
+left = 0
+right = 1
 
-class Problem:
 
-    def __init__(self, n):
-        """ ('s', 's') -> (husband, wife)
-            d -> right side
-            s -> left side
+class State:
+
+    def __init__(self, couples, position=None, boat=None):
+        """ ('0', '0') -> (husband, wife)
+            0 -> left side
+            1 -> right side
         """
-        self.state = Problem.initialize(n)
-        self.boat_side = 's'
+        if position is None or boat is None:
+            position, boat = State.initialize(couples)
 
-    @staticmethod
-    def initialize(n):
-        """ initial state -> all couples are ('s', 's') """
-        return [('s', 's') for i in range(n)]
+        self.positions = position
+        self.boat = boat
+        self.couples = couples
 
-    @staticmethod
-    def is_solution(state, boat):
-        """ final state -> all couples are ('d', 'd') """
-        if boat != 'd':
+    def is_solution(self):
+        """ final state -> all couples are (1, 1) """
+        if self.boat != right:
             return False
 
-        for pair in state:
-            if pair[0] == 's' or pair[1] == 's':
+        for pair in self.positions:
+            if pair[0] == left or pair[1] == left:
                 return False
         return True
 
-    @staticmethod
-    def is_valid(state):
-        return Problem.check_condition(state, 's') and Problem.check_condition(state, 'd')
-
-    @staticmethod
-    def check_condition(state, side):
-        for pair in state:
+    def side_is_valid(self, side):
+        for pair in self.positions:
             if pair[1] == side and pair[0] != side:
-                for pair_2 in state:
+                for pair_2 in self.positions:
                     if pair_2[0] == side:
                         return False
         return True
 
-    @staticmethod
-    def valid_transition(state, pair_1_index, pair_1_type, pair_2_index = None, pair_2_type = None):
-        new_state = list(state)
-        new_state = Problem.transition(new_state, pair_1_index, pair_1_type, pair_2_index, pair_2_type)
-
-        if Problem.is_valid(new_state):
-            return True, new_state
-
-        return False, state
+    def state_is_valid(self):
+        return self.side_is_valid(left) and self.side_is_valid(right)
 
     @staticmethod
-    def transition(state, pair_1_index, pair_1_type, pair_2_index = None, pair_2_type = None):
-        state[pair_1_index][pair_1_type] = Problem.change_side(state[pair_1_index][pair_1_type])
+    def initialize(couples):
+        """ initial state -> all couples are (0, 0) """
+        return [[left, left] for i in range(couples)], left
 
-        if pair_2_index is not None:
-            state[pair_2_index][pair_2_type] = Problem.change_side(state[pair_2_index][pair_2_type])
+    @staticmethod
+    def copy(state):
+        new_position = [x for x in state.positions]
+        return State(state.couples, new_position, state.boat)
+
+    def valid_transition(self, couple_1_index, couple_1_type, couple_2_index=None, couple_2_type=None):
+        """ If the transition is valid, the new transition is returned """
+        if self.positions[couple_1_index][couple_1_type] != self.boat:
+            return None
+
+        if couple_2_index is not None:
+            if self.positions[couple_2_index][couple_2_type] != self.boat:
+                return None
+
+        new_transitioned_state = State.transition(State.copy(self), couple_1_index, couple_1_type, couple_2_index, couple_2_type)
+
+        if new_transitioned_state.state_is_valid():
+            return new_transitioned_state
+
+        return None
+
+    @staticmethod
+    def transition(state, couple_1_index, couple_1_type, couple_2_index, couple_2_type):
+        """ The new transition is returned """
+        state.positions[couple_1_index][couple_1_type] = 1 - state.positions[couple_1_index][couple_1_type]
+
+        if couple_2_index is not None:
+            state.positions[couple_2_index][couple_2_type] = 1 - state.positions[couple_2_index][couple_2_type]
+
+        state.boat = 1 - state.boat
 
         return state
 
-    @staticmethod
-    def change_side(side):
-        if side == 'd':
-            return 's'
-        return 'd'
+    def show(self):
+        print(self.positions)
+        print(self.boat)
 
 
 def main():
-    print("Hello World!")
+    state = State(3)
+    state.show()
+    print()
+
+    state.valid_transition(1, 1).show()
 
 
 if __name__ == '__main__':
