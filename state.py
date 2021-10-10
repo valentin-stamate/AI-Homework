@@ -6,7 +6,7 @@ right = 1
 
 class State:
 
-    def __init__(self, couples, position=None, boat=None, visited=False):
+    def __init__(self, couples, position=None, boat=None):
         """ 01010011  -> 2*k : husband, 2*k + 1 : wife
             0 -> left side
             1 -> right side
@@ -18,7 +18,6 @@ class State:
 
         self.positions = position
         self.boat = boat
-        self.visited = visited
 
     def is_solution(self):
         """ final state -> the state looks like 000.0 """
@@ -49,7 +48,7 @@ class State:
     @staticmethod
     def copy(state):
         new_position = copy.deepcopy(state.positions)
-        return State(state.length // 2, new_position, state.boat, state.visited)
+        return State(state.length // 2, new_position, state.boat)
 
     @staticmethod
     def valid_transition(state, person_a, person_b=None):
@@ -80,6 +79,35 @@ class State:
 
         return state
 
+    @staticmethod
+    def neighbours(state):
+        n = state.length
+
+        neighbours = []
+        for i in range(n):
+            neighbour = State.valid_transition(state, i)
+
+            if neighbour is not None:
+                neighbours.append(neighbour)
+
+            for j in range(i + 1, n):
+                neighbour = State.valid_transition(state, i, j)
+
+                if neighbour is not None:
+                    neighbours.append(neighbour)
+
+        return neighbours
+
     def show(self):
         print(f"State: {self.positions}")
         print(f"Boat: {self.boat}")
+
+    def as_key(self):
+        key = 0
+
+        for i in range(self.length):
+            key += (1 << i) * self.positions[i]
+
+        key += (1 << self.length) * self.boat
+
+        return key
