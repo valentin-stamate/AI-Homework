@@ -1,10 +1,11 @@
 from state import State
-
+from BacktrakingSolution import BKTSolution
 
 class Exploration:
 
     @staticmethod
     def BackTracking(state):
+        BKTSolution(state)
         return None
 
     @staticmethod

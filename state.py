@@ -1,3 +1,5 @@
+import copy
+
 left = 0
 right = 1
 
@@ -44,7 +46,7 @@ class State:
 
     @staticmethod
     def copy(state):
-        new_position = [x for x in state.positions]
+        new_position = copy.deepcopy(state.positions)
         return State(state.couples, new_position, state.boat)
 
     def valid_transition(self, couple_1_index, couple_1_type, couple_2_index=None, couple_2_type=None):
