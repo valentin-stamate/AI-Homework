@@ -6,33 +6,35 @@ right = 1
 
 class State:
 
-    def __init__(self, couples, position=None, boat=None):
-        """ ('0', '0') -> (husband, wife)
+    def __init__(self, couples, position=None, boat=None, visited=False):
+        """ 01010011  -> 2*k : husband, 2*k + 1 : wife
             0 -> left side
             1 -> right side
         """
+        self.length = couples * 2
+
         if position is None or boat is None:
-            position, boat = State.initialize(couples)
+            position, boat = State.initialize(self.length)
 
         self.positions = position
         self.boat = boat
-        self.couples = couples
+        self.visited = visited
 
     def is_solution(self):
-        """ final state -> all couples are (1, 1) """
+        """ final state -> the state looks like 000.0 """
         if self.boat != right:
             return False
 
-        for pair in self.positions:
-            if pair[0] == left or pair[1] == left:
+        for i in range(0, self.length, 2):
+            if self.positions[i] == left or self.positions[i + 1] == left:
                 return False
         return True
 
     def side_is_valid(self, side):
-        for pair in self.positions:
-            if pair[1] == side and pair[0] != side:
-                for pair_2 in self.positions:
-                    if pair_2[0] == side:
+        for i in range(0, self.length, 2):
+            if self.positions[i + 1] == side and self.positions[i] != side:
+                for j in range(0, self.length, 2):
+                    if self.positions[j] == side:
                         return False
         return True
 
@@ -40,25 +42,26 @@ class State:
         return self.side_is_valid(left) and self.side_is_valid(right)
 
     @staticmethod
-    def initialize(couples):
-        """ initial state -> all couples are (0, 0) """
-        return [[left, left] for i in range(couples)], left
+    def initialize(length):
+        """ initial state -> 000..0 """
+        return [left for i in range(length)], left
 
     @staticmethod
     def copy(state):
         new_position = copy.deepcopy(state.positions)
-        return State(state.couples, new_position, state.boat)
+        return State(state.length // 2, new_position, state.boat, state.visited)
 
-    def valid_transition(self, couple_1_index, couple_1_type, couple_2_index=None, couple_2_type=None):
+    @staticmethod
+    def valid_transition(state, person_a, person_b=None):
         """ If the transition is valid, the new transition is returned """
-        if self.positions[couple_1_index][couple_1_type] != self.boat:
+        if state.positions[person_a] != state.boat:
             return None
 
-        if couple_2_index is not None:
-            if self.positions[couple_2_index][couple_2_type] != self.boat:
+        if person_b is not None:
+            if state.positions[person_b] != state.boat:
                 return None
 
-        new_transitioned_state = State.transition(State.copy(self), couple_1_index, couple_1_type, couple_2_index, couple_2_type)
+        new_transitioned_state = State.transition(State.copy(state), person_a, person_b)
 
         if new_transitioned_state.state_is_valid():
             return new_transitioned_state
@@ -66,17 +69,17 @@ class State:
         return None
 
     @staticmethod
-    def transition(state, couple_1_index, couple_1_type, couple_2_index, couple_2_type):
+    def transition(state, person_a, person_b):
         """ The new transition is returned """
-        state.positions[couple_1_index][couple_1_type] = 1 - state.positions[couple_1_index][couple_1_type]
+        state.positions[person_a] = 1 - state.positions[person_a]
 
-        if couple_2_index is not None:
-            state.positions[couple_2_index][couple_2_type] = 1 - state.positions[couple_2_index][couple_2_type]
+        if person_b is not None:
+            state.positions[person_b] = 1 - state.positions[person_b]
 
         state.boat = 1 - state.boat
 
         return state
 
     def show(self):
-        print(self.positions)
-        print(self.boat)
+        print(f"State: {self.positions}")
+        print(f"Boat: {self.boat}")
