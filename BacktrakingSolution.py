@@ -4,9 +4,9 @@ import time
 
 
 from state import State
-import resource, sys
+# import resource, sys
 
-resource.setrlimit(resource.RLIMIT_STACK, (2 ** 29, -1))
+# resource.setrlimit(resource.RLIMIT_STACK, (2 ** 29, -1))
 sys.setrecursionlimit(10 ** 6)
 
 

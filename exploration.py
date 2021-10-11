@@ -1,3 +1,4 @@
+from back import backtracking
 from state import State
 from BacktrakingSolution import BKTSolution
 
@@ -6,8 +7,15 @@ class Exploration:
 
     @staticmethod
     def BackTracking(state):
-        BKTSolution(state)
-        return None
+        # BKTSolution(state)
+        solution = [[], 0]
+        backtracking(state, set(), dict(), solution)
+
+        print("Best solution:")
+
+        n = len(solution[0])
+        for i in range(n):
+            solution[0][n - i - 1].show()
 
     @staticmethod
     def bfs(state):
@@ -121,8 +129,9 @@ class Exploration:
         AStar        = 5
         """)
 
-        choice = int(input("Enter your choise: "))
+        choice = int(input("Enter your choice: "))
         couples = int(input("The number of couples: "))
+        print("")
 
         state = State(couples)
 
@@ -140,3 +149,4 @@ class Exploration:
 
         if choice == 5:
             Exploration.astar(state)
+
