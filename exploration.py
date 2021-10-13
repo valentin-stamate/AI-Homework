@@ -6,6 +6,29 @@ from BacktrakingSolution import BKTSolution
 class Exploration:
 
     @staticmethod
+    def buildSolution(node, parents):
+        print("Steps:")
+        current_key = node.as_key()
+
+        steps = []
+
+        while parents.get(current_key) is not None:
+            parent = parents.get(current_key)
+            steps.append(parent)
+            current_key = parent.as_key()
+
+        i = 0
+        while len(steps) > 0:
+            print(i)
+            state = steps.pop()
+            state.show()
+            i += 1
+            print()
+
+        print(i + 1)
+        node.show()
+
+    @staticmethod
     def BackTracking(state):
         # BKTSolution(state)
         solution = [[], 0]
@@ -15,7 +38,9 @@ class Exploration:
 
         n = len(solution[0])
         for i in range(n):
+            print(i)
             solution[0][n - i - 1].show()
+            print()
 
     @staticmethod
     def bfs(state):
@@ -30,26 +55,7 @@ class Exploration:
             visited.add(node.as_key())
 
             if node.is_solution():
-                print("Steps:")
-                current_key = node.as_key()
-
-                steps = []
-
-                while parents.get(current_key) is not None:
-                    parent = parents.get(current_key)
-                    steps.append(parent)
-                    current_key = parent.as_key()
-
-                i = 0
-                while len(steps) > 0:
-                    print(i)
-                    state = steps.pop()
-                    state.show()
-                    i += 1
-                    print()
-
-                print(i + 1)
-                node.show()
+                Exploration.buildSolution(node, parents)
                 return node
 
             neighbours = State.neighbours(node)
@@ -75,26 +81,7 @@ class Exploration:
             visited.add(node.as_key())
 
             if node.is_solution():
-                print("Steps:")
-                current_key = node.as_key()
-
-                steps = []
-
-                while parents.get(current_key) is not None:
-                    parent = parents.get(current_key)
-                    steps.append(parent)
-                    current_key = parent.as_key()
-
-                i = 0
-                while len(steps) > 0:
-                    print(i)
-                    state = steps.pop()
-                    state.show()
-                    i += 1
-                    print()
-
-                print(i + 1)
-                node.show()
+                Exploration.buildSolution(node, parents)
                 return node
 
             neighbours = State.neighbours(node)
