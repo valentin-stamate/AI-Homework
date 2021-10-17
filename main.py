@@ -1,5 +1,4 @@
-from exploration import Exploration
-from state import State
+from exploration.exploration import Exploration
 
 
 def main():
