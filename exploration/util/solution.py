@@ -1,4 +1,3 @@
-
 def print_transition(state, new_state):
     persons = []
     for i in range(len(state.positions)):
@@ -22,7 +21,7 @@ def print_transition(state, new_state):
         print(p1 + ", " + p2 + sides)
 
     else:
-        if state.positions[persons[0]] == 0:
+        if state.positions[persons[0]] == 1:
             sides = " " + side[1] + '->' + side[0]
         else:
             sides = " " + side[0] + '->' + side[1]
@@ -74,6 +73,3 @@ def build_transitions(node, parents):
         state = new_state
         i += 1
     print_transition(state, node)
-
-
-
