@@ -1,1 +1,1 @@
-# AI-Homeworks
+# Artifficial Intelligence Homework

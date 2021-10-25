@@ -29,7 +29,7 @@ def print_transition(state, new_state):
             p = p_type[0] + str(persons[0] // 2)
         else:
             p = p_type[1] + str(persons[0] // 2)
-        print(p + sides)
+        print(p + "           " + sides)
 
 
 def print_solution(node, parents):
