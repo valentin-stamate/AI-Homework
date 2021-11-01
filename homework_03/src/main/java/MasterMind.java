@@ -113,7 +113,7 @@ public class MasterMind {
     }
 
     public void startGame() {
-        Scanner scanner = new Scanner(System.in);
+
         boolean valid;
         List<String> newSequence = new ArrayList<>();
         List<List<String>> previousSequences = new ArrayList<>();
@@ -148,11 +148,13 @@ public class MasterMind {
             String[] colors;
             var newColors = new ArrayList<String>();
             do {
+                Scanner scanner = new Scanner(System.in);
                 valid = true;
                 System.out.println("Enter code:");
                 String s = scanner.nextLine();
                 s = s.toUpperCase();
                 s = s.replace('\n', '\0');
+                newColors.clear();
                 colors = s.split(" ");
                 for (var c : colors) {
                     if (c.length() >= 3) {
