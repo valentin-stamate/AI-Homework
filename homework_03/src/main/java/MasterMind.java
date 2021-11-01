@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class MasterMind {
     private final int n;
@@ -9,11 +7,13 @@ public class MasterMind {
     private final List<String> colors;
     private final List<String> sequence;
     private final List<Integer> availablePieces;
+    private final List<String> secretCode;
 
     public MasterMind(int n, int m, int k) {
         this.n = n;
         this.m = m;
         this.k = k;
+        secretCode = new ArrayList<>(Arrays.asList("X", "X", "X", "X"));
 
         colors = new ArrayList<>();
 
@@ -107,9 +107,105 @@ public class MasterMind {
 
     static public void showSequence(List<String> sequence) {
         for (String color : sequence) {
-            System.out.printf("%s ", color);
+            System.out.printf("%-7s ", color);
         }
         System.out.println();
+    }
+
+    public void startGame() {
+        Scanner scanner = new Scanner(System.in);
+        boolean valid;
+        List<String> newSequence = new ArrayList<>();
+        List<List<String>> previousSequences = new ArrayList<>();
+        List<Integer> previousGuesses = new ArrayList<>();
+        do {
+            System.out.print("    ");
+            for (var piece : secretCode) {
+                System.out.printf("%-7s ", piece);
+            }
+            System.out.println();
+            if (previousSequences.size() != 0) {
+                int i = 0;
+                for (var seq : previousSequences) {
+                    i++;
+                    System.out.printf("%-4d", i);
+                    for (var color : seq) {
+                        System.out.printf("%-7s ", color);
+                    }
+                    System.out.println("     Guessed : " + previousGuesses.get(i - 1));
+                }
+                System.out.println();
+            }
+            if (previousSequences.size() == 2 * n) {
+                System.out.println("You lost!");
+                System.out.println("The secret code was :");
+                for (var color : sequence) {
+                    System.out.printf("%-7s ", color);
+                }
+                break;
+            }
+            newSequence.clear();
+            String[] colors;
+            var newColors = new ArrayList<String>();
+            do {
+                valid = true;
+                System.out.println("Enter code:");
+                String s = scanner.nextLine();
+                s = s.toUpperCase();
+                s = s.replace('\n', '\0');
+                colors = s.split(" ");
+                for (var c : colors) {
+                    if (c.length() >= 3) {
+                        newColors.add(c);
+                    }
+                }
+
+                if (newColors.size() != 4) {
+                    System.out.println("Sequence must have 4 pieces");
+                    valid = false;
+                    continue;
+                }
+                for (String color : newColors) {
+                    if (!isValid(color)) {
+                        System.out.println("Not enough pieces left or not valid colors");
+                        valid = false;
+                        break;
+                    }
+                }
+                if (!isValidSequence(newColors)) {
+                    System.out.println("All colors in a sequence must be different");
+                    valid = false;
+                }
+            } while (!valid);
+            newSequence.addAll((newColors));
+            previousSequences.add(newSequence);
+            var piecesGuessed = compareSequence(newSequence);
+            previousGuesses.add(piecesGuessed);
+            System.out.println("you guessed " + piecesGuessed + " pieces");
+            if (isSolution(newSequence)) {
+                System.out.println("You won");
+            }
+
+
+        } while (!isSolution(newSequence));
+    }
+
+    private boolean isValidSequence(List<String> colors) {
+        for (int i = 0; i < k - 1; i++) {
+            for (int j = i + 1; j < k; j++) {
+                if (Objects.equals(colors.get(i), colors.get(j)))
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean isValid(String color) {
+        try {
+            return colors.contains(color) && availablePieces.get(colors.indexOf(color)) > 0;
+        } catch (IndexOutOfBoundsException e) {
+            return false;
+        }
     }
 
 }
