@@ -115,10 +115,9 @@ public class MasterMind {
     public void startGame() {
 
         boolean valid;
-        List<String> newSequence = new ArrayList<>();
         List<List<String>> previousSequences = new ArrayList<>();
         List<Integer> previousGuesses = new ArrayList<>();
-        do {
+        while (true) {
             System.out.print("    ");
             for (var piece : secretCode) {
                 System.out.printf("%-7s ", piece);
@@ -144,7 +143,6 @@ public class MasterMind {
                 }
                 break;
             }
-            newSequence.clear();
             String[] colors;
             var newColors = new ArrayList<String>();
             do {
@@ -179,17 +177,18 @@ public class MasterMind {
                     valid = false;
                 }
             } while (!valid);
-            newSequence.addAll((newColors));
+            List<String> newSequence = new ArrayList<>((newColors));
             previousSequences.add(newSequence);
             var piecesGuessed = compareSequence(newSequence);
             previousGuesses.add(piecesGuessed);
             System.out.println("you guessed " + piecesGuessed + " pieces");
             if (isSolution(newSequence)) {
                 System.out.println("You won");
+                break;
             }
 
 
-        } while (!isSolution(newSequence));
+        }
     }
 
     private boolean isValidSequence(List<String> colors) {
