@@ -1,13 +1,16 @@
 import java.util.*;
+import java.util.List;
 
 public class MasterMind {
     private final int n;
     private final int m;
     private final int k;
-    private final List<String> colors;
+
+    private final String[] colors;
+    private final int[] availablePieces;
+    private final HashMap<String, Integer> colorsMap;
+
     private final List<String> sequence;
-    private final List<Integer> availablePieces;
-    private final List<String> secretCode;
 
     /**
      * n = number of colors
@@ -18,24 +21,24 @@ public class MasterMind {
         this.n = n;
         this.m = m;
         this.k = k;
-        secretCode = new ArrayList<>();
 
-        for (int i = 0; i < k; i++) {
-            secretCode.add("X");
+        colors = new String[n];
+        colorsMap = new HashMap<>();
+
+        for (int i = 0; i < n; i++) {
+            colors[i] = Colors.COLORS[i];
+            colorsMap.put(colors[i], i);
         }
-
-        colors = new ArrayList<>();
-        colors.addAll(Arrays.asList(Colors.COLORS).subList(0, n));
 
         availablePieces = createAvailablePieces();
         sequence = initializeSequence();
     }
 
-    private List<Integer> createAvailablePieces() {
-        List<Integer> availablePieces = new ArrayList<>();
+    private int[] createAvailablePieces() {
+        int[] availablePieces = new int[n];
 
         for (int i = 0; i < n; i++) {
-            availablePieces.add(m);
+            availablePieces[i] = m;
         }
 
         return availablePieces;
@@ -53,15 +56,15 @@ public class MasterMind {
 
         while (length != 0) {
             int index = random.nextInt(n);
-            String color = colors.get(index);
+            String color = colors[index];
 
             if (!sequence.contains(color)) {
                 sequence.add(color);
                 length--;
-                availablePieces.set(index, availablePieces.get(index) - 1);
             }
         }
 
+        subtractSequence(sequence);
         return sequence;
     }
 
@@ -83,19 +86,19 @@ public class MasterMind {
 
         while (length != 0) {
             int index = random.nextInt(n);
-            String color = colors.get(index);
+            String color = colors[index];
 
-            if (availablePieces.get(index) == 0) {
+            if (availablePieces[index] == 0) {
                 continue;
             }
 
             if (!sequence.contains(color)) {
                 sequence.add(color);
                 length--;
-                availablePieces.set(index, availablePieces.get(index) - 1);
             }
         }
 
+        subtractSequence(sequence);
         return sequence;
     }
 
@@ -119,9 +122,15 @@ public class MasterMind {
     }
 
     public void startGame() {
+        List<String> secretCode = new ArrayList<>();
+
+        for (int i = 0; i < k; i++) {
+            secretCode.add("X");
+        }
 
         boolean valid;
-        List<List<String>> previousSequences = new ArrayList<>();
+        List<String> previousSequences = new ArrayList<>();
+//        List<String> previousRemainingColors = new ArrayList<>();
         List<Integer> previousGuesses = new ArrayList<>();
 
         System.out.println("Available colors:");
@@ -129,29 +138,53 @@ public class MasterMind {
             System.out.println(color);
         }
         System.out.printf("\n\n%25s\n", "Game Started");
-        System.out.println("=========================================");
+
+        String border = "========================================================================";
+        StringBuilder secretColors = new StringBuilder();
+        for (var piece : secretCode) {
+            secretColors.append(String.format("%-7s ", piece));
+        }
+
+        boolean playerWon = false;
 
         while (true) {
-            System.out.print("    ");
-            for (var piece : secretCode) {
-                System.out.printf("%-7s ", piece);
-            }
+            boolean validSequence = true;
+
+            System.out.println(border);
+            System.out.printf("||         %-58s ||", secretColors);
+
             System.out.println();
-            if (previousSequences.size() != 0) {
-                int i = 0;
-                for (var seq : previousSequences) {
-                    i++;
-                    System.out.printf("%-4d", 2 * n - i + 1);
-                    for (var color : seq) {
-                        System.out.printf("%-7s ", color);
-                    }
-                    System.out.println("     Guessed : " + previousGuesses.get(i - 1));
-                }
-                System.out.println();
+
+            int sequences = previousGuesses.size();
+
+            System.out.println(border);
+            for (int i = 0; i < sequences; i++) {
+                System.out.printf("|| %-2d | %-45s     Guessed: %-2s ||\n", 2 * n - i, previousSequences.get(i), previousGuesses.get(i));
             }
-            if (previousSequences.size() == 2 * n) {
-                System.out.println("You lost!");
-                System.out.println("The secret code was :");
+            System.out.println(border);
+
+            if (playerWon) {
+                break;
+            }
+
+            System.out.printf("\nAvailable Colors: %s\n", remainingColorsAsString(this.colors, availablePieces));
+
+            /* checking for the remaining colors */
+            int availableColors = 0;
+            for (var n : availablePieces) {
+                if (n != 0) {
+                    availableColors++;
+                }
+            }
+
+            if (availableColors < k) {
+                System.out.println("No more colors left. You lost.");
+                break;
+            }
+
+            if (sequences == 2 * n) {
+                System.out.println("\nNo remaining moves left. You lost!");
+                System.out.println("The secret colors were :");
                 for (var color : sequence) {
                     System.out.printf("%-7s ", color);
                 }
@@ -159,69 +192,100 @@ public class MasterMind {
             }
             String[] colors;
             var newColors = new ArrayList<String>();
-            do {
-                Scanner scanner = new Scanner(System.in);
-                valid = true;
-                System.out.println("Enter code:");
-                String s = scanner.nextLine();
-                s = s.toUpperCase();
-                s = s.replace('\n', '\0');
-                newColors.clear();
-                colors = s.split(" ");
-                for (var c : colors) {
-                    if (c.length() >= 3) {
-                        newColors.add(c);
-                    }
-                }
 
-                if (newColors.size() != k) {
-                    System.out.printf("Sequence must have %d pieces\n", k);
-                    valid = false;
-                    continue;
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Enter colors:");
+            String s = scanner.nextLine();
+            s = s.toUpperCase();
+            s = s.replace('\n', '\0');
+
+            colors = s.split(" ");
+            for (var c : colors) {
+                if (c.length() >= 1) {
+                    newColors.add(c);
                 }
-                for (String color : newColors) {
-                    if (!isValid(color)) {
-                        availablePieces.set(this.colors.indexOf(color), availablePieces.get(this.colors.indexOf(color) - 1));
-                        System.out.println("Not enough pieces left or not valid colors");
-                        valid = false;
-                        break;
-                    }
-                }
-                if (!isValidSequence(newColors)) {
-                    System.out.println("All colors in a sequence must be different");
-                    valid = false;
-                }
-            } while (!valid);
-            List<String> newSequence = new ArrayList<>((newColors));
-            previousSequences.add(newSequence);
-            var piecesGuessed = compareSequence(newSequence);
-            previousGuesses.add(piecesGuessed);
-            System.out.println("you guessed " + piecesGuessed + " pieces");
-            if (isSolution(newSequence)) {
-                System.out.println("You won");
-                break;
             }
 
+            if (newColors.size() != k) {
+                System.out.printf("Sequence must have %d pieces\n", k);
+                continue;
+            }
 
+            for (String color : newColors) {
+                if (!colorsMap.containsKey(color)) {
+                    System.out.printf("Color %s is not available\n", color);
+                    validSequence = false;
+                    continue;
+                }
+
+                if (availablePieces[colorsMap.get(color)] == 0) {
+                    System.out.printf("Not enough pieces for color %s\n", color);
+                    validSequence = false;
+                }
+            }
+
+            if (areDuplicates(newColors)) {
+                System.out.println("All colors in a sequence must be different");
+                validSequence = false;
+            }
+
+            if (validSequence) {
+                subtractSequence(newColors);
+
+                List<String> newSequence = new ArrayList<>((newColors));
+                var piecesGuessed = compareSequence(newSequence);
+
+                previousGuesses.add(piecesGuessed);
+                previousSequences.add(listToString(newColors, "%-7s "));
+//                previousRemainingColors.add(remainingColorsAsString(this.colors, availablePieces));
+
+                System.out.printf("You guessed %d pieces\n\n", piecesGuessed);
+
+                if (isSolution(newSequence)) {
+                    System.out.println("\nYou won");
+                    playerWon = true;
+                }
+            }
         }
     }
 
-    private boolean isValidSequence(List<String> colors) {
+    private void subtractSequence(List<String> colors) {
+        for (String color : colors) {
+            availablePieces[colorsMap.get(color)]--;
+        }
+    }
+
+    private boolean areDuplicates(List<String> colors) {
         for (int i = 0; i < k - 1; i++) {
             for (int j = i + 1; j < k; j++) {
                 if (Objects.equals(colors.get(i), colors.get(j)))
-                    return false;
+                    return true;
             }
         }
-        return true;
+        return false;
     }
 
-    private boolean isValid(String color) {
-        try {
-            return colors.contains(color) && availablePieces.get(colors.indexOf(color)) > 0;
-        } catch (IndexOutOfBoundsException e) {
-            return false;
+    private static <T> String listToString(List<T> list, String delim) {
+        StringBuilder sb = new StringBuilder();
+
+        for (var string : list) {
+            sb.append(String.format(delim, string));
         }
+
+        return sb.toString();
+    }
+
+    private static String remainingColorsAsString(String[] colors, int[] availablePieces) {
+        StringBuilder sb = new StringBuilder();
+
+        int n = colors.length;
+
+        for (int i = 0; i < n; i++) {
+            sb.append(String.format("%s(%d)  ", colors[i], availablePieces[i]));
+        }
+
+        return sb.toString();
     }
 
 }
