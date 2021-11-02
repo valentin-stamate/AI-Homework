@@ -9,17 +9,23 @@ public class MasterMind {
     private final List<Integer> availablePieces;
     private final List<String> secretCode;
 
+    /**
+     * n = number of colors
+     * m = number of balls with a color
+     * k = length of secret code
+     */
     public MasterMind(int n, int m, int k) {
         this.n = n;
         this.m = m;
         this.k = k;
-        secretCode = new ArrayList<>(Arrays.asList("X", "X", "X", "X"));
+        secretCode = new ArrayList<>();
+
+        for (int i = 0; i < k; i++) {
+            secretCode.add("X");
+        }
 
         colors = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-            colors.add(Colors.COLORS[i]);
-        }
+        colors.addAll(Arrays.asList(Colors.COLORS).subList(0, n));
 
         availablePieces = createAvailablePieces();
         sequence = initializeSequence();
@@ -117,6 +123,14 @@ public class MasterMind {
         boolean valid;
         List<List<String>> previousSequences = new ArrayList<>();
         List<Integer> previousGuesses = new ArrayList<>();
+
+        System.out.println("Available colors:");
+        for (String color : colors) {
+            System.out.println(color);
+        }
+        System.out.printf("\n\n%25s\n", "Game Started");
+        System.out.println("=========================================");
+
         while (true) {
             System.out.print("    ");
             for (var piece : secretCode) {
@@ -127,7 +141,7 @@ public class MasterMind {
                 int i = 0;
                 for (var seq : previousSequences) {
                     i++;
-                    System.out.printf("%-4d", i);
+                    System.out.printf("%-4d", 2 * n - i + 1);
                     for (var color : seq) {
                         System.out.printf("%-7s ", color);
                     }
@@ -160,13 +174,14 @@ public class MasterMind {
                     }
                 }
 
-                if (newColors.size() != 4) {
-                    System.out.println("Sequence must have 4 pieces");
+                if (newColors.size() != k) {
+                    System.out.printf("Sequence must have %d pieces\n", k);
                     valid = false;
                     continue;
                 }
                 for (String color : newColors) {
                     if (!isValid(color)) {
+                        availablePieces.set(this.colors.indexOf(color), availablePieces.get(this.colors.indexOf(color) - 1));
                         System.out.println("Not enough pieces left or not valid colors");
                         valid = false;
                         break;
