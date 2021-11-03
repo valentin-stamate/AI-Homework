@@ -64,7 +64,6 @@ public class MasterMind {
             }
         }
 
-        subtractSequence(sequence);
         return sequence;
     }
 
@@ -128,9 +127,7 @@ public class MasterMind {
             secretCode.add("X");
         }
 
-        boolean valid;
         List<String> previousSequences = new ArrayList<>();
-//        List<String> previousRemainingColors = new ArrayList<>();
         List<Integer> previousGuesses = new ArrayList<>();
 
         System.out.println("Available colors:");
@@ -238,7 +235,6 @@ public class MasterMind {
 
                 previousGuesses.add(piecesGuessed);
                 previousSequences.add(listToString(newColors, "%-7s "));
-//                previousRemainingColors.add(remainingColorsAsString(this.colors, availablePieces));
 
                 System.out.printf("You guessed %d pieces\n\n", piecesGuessed);
 
