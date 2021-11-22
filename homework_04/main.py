@@ -1,15 +1,11 @@
-import math
-
+import matplotlib.pyplot as plt
 import numpy as np
-
 from neural_network import NeuralNetwork
-
-epsilon = 0.001
 
 
 def normalize(x):
     if x == 0.0:
-        return epsilon
+        return 0.001
 
     return x
 
@@ -36,7 +32,11 @@ def main():
     # best 0.5 lr, 500 epochs
 
     neural_network = NeuralNetwork([2, 2, 1], learning_rate)
-    neural_network.train(dataset, epochs)
+    epochs_evolution = neural_network.train(dataset, epochs)
+
+    plt.plot(epochs_evolution, label='accuracy')
+    plt.legend()
+    plt.show()
 
 
 if __name__ == '__main__':

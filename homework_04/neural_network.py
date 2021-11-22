@@ -36,6 +36,8 @@ class NeuralNetwork:
     def train(self, dataset, epochs):
         n = len(dataset)
 
+        evolution = []
+
         for epoch in range(epochs):
             dataset = random.sample(dataset, n)
 
@@ -59,7 +61,10 @@ class NeuralNetwork:
 
                     self.brain[i] -= delta * self.learning_rate
 
+            evolution.append(1 - err / n)
             print('Epoch %d | Accuracy %f' % (epoch, 1 - err / n))
+
+        return evolution
 
     @staticmethod
     def check_output(output, target):
