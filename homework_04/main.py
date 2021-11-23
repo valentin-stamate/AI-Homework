@@ -31,12 +31,12 @@ def main():
 
     # best 0.5 lr, 500 epochs
 
-    neural_network = NeuralNetwork([2, 6, 1], learning_rate)
+    neural_network = NeuralNetwork([2, 2, 1], learning_rate)
     epochs_evolution = neural_network.train(dataset, epochs)
 
     plt.plot(epochs_evolution, label='accuracy')
     plt.legend()
-    plt.ylim(0, 1)
+    plt.ylim(0, 1.05)
 
     plt.show()
 
