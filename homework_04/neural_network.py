@@ -10,9 +10,11 @@ class NeuralNetwork:
     def __init__(self, dimension, learning_rate):
         self.learning_rate = learning_rate
         self.brain = []
+        self.biases = []
 
         for i in range(0, len(dimension) - 1):
             self.brain.append(Initializer.init(dimension[i + 1], dimension[i]))
+            self.biases.append(Initializer.init(dimension[i + 1], 1))
 
     def feed_forward(self, _input):
         current_input = _input
@@ -27,8 +29,11 @@ class NeuralNetwork:
 
         inputs = [current_input]
 
-        for layer in self.brain:
-            current_input = NeuralNetwork.sigmoid(layer.dot(current_input))
+        for i in range(len(self.brain)):
+            layer = self.brain[i]
+            bias = self.biases[i]
+
+            current_input = NeuralNetwork.sigmoid(layer.dot(current_input) + bias)
             inputs.append(current_input)
 
         return inputs
@@ -40,6 +45,8 @@ class NeuralNetwork:
 
         for epoch in range(epochs):
             dataset = random.sample(dataset, n)
+
+            # self.print_brain()
 
             err = 0
             for data in dataset:
@@ -54,12 +61,11 @@ class NeuralNetwork:
                 err += NeuralNetwork.check_output(inputs[-1], _target)
 
                 for i in range(len(self.brain) - 1, -1, -1):
-                    delta = self.cost_derivative(self.brain[i].shape, errors[i + 1], inputs[i], inputs[i + 1])
+                    delta_w = self.cost_derivative(self.brain[i].shape, errors[i + 1], inputs[i + 1], inputs[i])
+                    delta_b = self.cost_derivative(self.biases[i].shape, errors[i + 1], inputs[i + 1])
 
-                    # NeuralNetwork.print_array(delta)
-                    # print("")
-
-                    self.brain[i] -= delta * self.learning_rate
+                    self.brain[i] -= delta_w * self.learning_rate
+                    self.biases[i] -= delta_b * self.learning_rate
 
             evolution.append(1 - err / n)
             print('Epoch %d | Accuracy %f' % (epoch, 1 - err / n))
@@ -68,16 +74,14 @@ class NeuralNetwork:
 
     @staticmethod
     def check_output(output, target):
-        output = output[0, 0]
-        target = target[0, 0]
+        o_index = np.argmax(output)
+        t_index = np.argmax(target)
 
-        # print(f'{output} -- {target}')
-        out = 0.0
-        if output > 0.4:
-            out = 1.0
+        # print("Comp")
+        # NeuralNetwork.print_array(output)
+        # NeuralNetwork.print_array(target)
 
-        # print(f'{out} -- {target}')
-        return out != target
+        return o_index != t_index
 
     def back_propagation(self, _output):
         current_output = _output
@@ -97,12 +101,17 @@ class NeuralNetwork:
         return 1 / (1 + (np.exp(-x)))
 
     @staticmethod
-    def cost_derivative(shape, _error, _input, _output):
+    def cost_derivative(shape, _error, _output, _input=None):
         arr = np.zeros(shape, dtype='float32')
 
         for i in range(0, shape[0]):
             for j in range(0, shape[1]):
-                arr[i, j] = (_error[i] * -1) * (_output[i] * (1 - _output[i])) * _input[j]
+                der = (_error[i] * -1) * (_output[i] * (1 - _output[i]))
+
+                if _input is not None:
+                    der *= _input[j]
+
+                arr[i, j] = der
 
         return arr
 
@@ -110,5 +119,19 @@ class NeuralNetwork:
     def print_array(array):
         for i in range(array.shape[0]):
             for j in range(array.shape[1]):
-                print(f'{array[i, j]} ')
+                print(f'{array[i, j]} ', end='')
             print("")
+
+    def print_brain(self):
+        print("---=== Brain ===---")
+        print("Weights")
+        for i in range(len(self.brain)):
+            print(f'Layer: {i + 1}')
+            NeuralNetwork.print_array(self.brain[i])
+            print()
+
+        print("\nBiases")
+        for i in range(len(self.biases)):
+            print(f'Layer: {i + 1}')
+            NeuralNetwork.print_array(self.biases[i])
+            print()
