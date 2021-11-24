@@ -37,7 +37,7 @@ def main():
     epochs = int(input('Epochs: '))
 
     # best 0.1 lr, 1000  epochs | AND
-    # best 0.1 lr, 4000 epochs  | OR
+    # best 0.01 lr, 4000 epochs  | OR
     # best 0.1 lr, 10000 epochs | XOR
 
     neural_network = NeuralNetwork([2, 2, 2], learning_rate)
