@@ -84,9 +84,7 @@ In order for realistic on-screen images to be presented, each object must be ren
 Edges must be smoothed and textured so that their underlying construction from polygons is not obvious to the naked eye.
 In many applications, still pictures are inadequate, and rapid display of real-time images is required.
 Both extremely efficient algorithms and state-of-the-art hardware are needed to accomplish real-time animation.
-(For more technical details of graphics displays, see computer graphics)
-.
-
+(For more technical details of graphics displays, see computer graphics).
 Human-computer interaction (HCI) is concerned with designing effective interaction between users and computers and the construction of interfaces that support this interaction.
 HCI occurs at an interface that includes both software and hardware.
 User interface design impacts the life cycle of software, so it should occur early in the design process.

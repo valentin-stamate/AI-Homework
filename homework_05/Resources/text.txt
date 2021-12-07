@@ -87,7 +87,7 @@ brain cancer; magnetic resonance imaging (MRI)An image, produced by magnetic res
 
 
 
-A challenge for computer graphics is the development of efficient algorithms that manipulate the myriad of lines, triangles, and polygons that make up a computer image. In order for realistic on-screen images to be presented, each object must be rendered as a set of planar units. Edges must be smoothed and textured so that their underlying construction from polygons is not obvious to the naked eye. In many applications, still pictures are inadequate, and rapid display of real-time images is required. Both extremely efficient algorithms and state-of-the-art hardware are needed to accomplish real-time animation. (For more technical details of graphics displays, see computer graphics)
+A challenge for computer graphics is the development of efficient algorithms that manipulate the myriad of lines, triangles, and polygons that make up a computer image. In order for realistic on-screen images to be presented, each object must be rendered as a set of planar units. Edges must be smoothed and textured so that their underlying construction from polygons is not obvious to the naked eye. In many applications, still pictures are inadequate, and rapid display of real-time images is required. Both extremely efficient algorithms and state-of-the-art hardware are needed to accomplish real-time animation. (For more technical details of graphics displays, see computer graphics).
 
 
 

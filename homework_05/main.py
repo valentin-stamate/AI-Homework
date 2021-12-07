@@ -6,11 +6,13 @@ ontology = lightrdf.RDFDocument('Resources/ontology.owl')
 
 
 def get_all_super_topic_of():
-    keyword = input("Insert a word: ")
+    word = input("Insert a word: ")
     doc = lightrdf.RDFDocument('Resources/ontology.owl')
     for triple in doc.search_triples(None, None, None):
-        extracted = str(triple[0])[::-1].split('/')[0][::-1]
-        if extracted == keyword and triple[1].endswith('superTopicOf'):
+        extracted_first = str(triple[0])[::-1].split('/')[0][::-1]
+        extracted_third = str(triple[0])[::-1].split('/')[0][::-1]
+
+        if (extracted_first == word or extracted_third == word) and triple[1].endswith('superTopicOf'):
             print(triple)
 
 
@@ -39,8 +41,9 @@ def respects_rule_4(sentence):
     for token in tagged_tokens:
         if token[1] in ['NN', 'NNS', 'NNP', 'NNPS']:
             try:
-                wnl = WordNetLemmatizer()
-                word = wnl.lemmatize(token[0])
+                word = token[0]
+                # wnl = WordNetLemmatizer()
+                # word = wnl.lemmatize(token[0])
                 # print(word)
                 if exists_in_ontology(word):
                     print(word)
@@ -87,7 +90,7 @@ def exists_in_ontology(word):
 
 def main():
     # get_all_super_topic_of()
-    # extract_sentences()
+    extract_sentences()
     extract_fragments()
 
 
