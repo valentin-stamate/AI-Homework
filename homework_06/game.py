@@ -40,7 +40,7 @@ class Environment:
         [1, 2, 1, 2],
         [1, 1, 1, 2],
         [2, 1, 1, 3],
-    ])
+    ], dtype='float32')
 
     @staticmethod
     def make_transition(state, action):
@@ -76,7 +76,7 @@ class Environment:
         new_player = Environment.player_position(new_state)
 
         if state[new_player[0]][new_player[1]] == CellType.HOLE:
-            reward = -1
+            reward = -5
             new_state = None
 
         if state[new_player[0]][new_player[1]] == CellType.FINISH:
