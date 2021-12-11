@@ -13,6 +13,12 @@ class Experience:
     def __str__(self):
         return f'State={self.state}\nAction={self.action}\nReward={self.reward}\nNextState={self.next_state}\n'
 
+    def get_attributes(self):
+        return [self.state, self.action, self.reward, self.next_state]
+
+    def split(self):
+        return self.state, self.action, self.reward, self.next_state
+
 
 class CellType:
     PLAYER = 0
@@ -35,12 +41,19 @@ class Environment:
     columns = 4
     actions = ActionType.actions
 
-    initial_state = np.array([
+    initial_state = [
         [0, 1, 1, 1],
         [1, 2, 1, 2],
         [1, 1, 1, 2],
         [2, 1, 1, 3],
-    ], dtype='float32')
+    ]
+
+    final_state = [
+        [1, 1, 1, 1],
+        [1, 2, 1, 2],
+        [1, 1, 1, 2],
+        [2, 1, 1, 0],
+    ]
 
     @staticmethod
     def make_transition(state, action):
@@ -76,11 +89,11 @@ class Environment:
         new_player = Environment.player_position(new_state)
 
         if state[new_player[0]][new_player[1]] == CellType.HOLE:
-            reward = -5
+            reward = -1
             new_state = None
 
         if state[new_player[0]][new_player[1]] == CellType.FINISH:
-            reward = 10
+            reward = 1
 
         return Experience(state, action, reward, new_state)
 
@@ -92,6 +105,10 @@ class Environment:
                     return [i, j]
 
         return None
+
+    @staticmethod
+    def is_final_state(state):
+        return np.array_equal(state, Environment.final_state)
 
     @staticmethod
     def copy_state(state):
