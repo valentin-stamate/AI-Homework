@@ -1,4 +1,6 @@
 import random
+import time
+
 import matplotlib.pyplot as plt
 import numpy as np
 from tensorflow import keras
@@ -26,13 +28,13 @@ def as_np_array(obj):
     return np.array(obj).reshape(len(obj), 16)
 
 
-def simple_q_learning():
+def iterative_q_learning():
     # HyperParameters
     eps = 1
     eps_step = 0.8
 
     lr = 0.1
-    df = 0.9
+    df = 0.8
     episodes = 100
 
     # Environment
@@ -46,7 +48,7 @@ def simple_q_learning():
         steps = 0
 
         while state is not None:
-            # print(state)
+            print(state, '\n')
 
             pos = env.player_position(state)
             ind = pos[0] * env.rows + pos[1]
@@ -96,25 +98,25 @@ def simple_q_learning():
 
 def neural_net_q_learning():
     nn = models.Sequential([
-        layers.Dense(16, activation=activations.relu, input_shape=(16, )),
-        layers.Dense(8, activation=activations.relu),
+        layers.Dense(32, activation=activations.relu, input_shape=(16, )),
         layers.Dense(4, activation=activations.linear)
     ])
+    # nn = models.load_model('model')
 
-    nn.compile(optimizer='rmsprop', loss=losses.MeanSquaredError(), metrics=['accuracy'])
+    nn.compile(optimizer='adam', loss=losses.MeanSquaredError(), metrics=['accuracy'])
 
     # HyperParameters
     eps = 1
-    eps_step = 0.6
+    eps_step = 0.99
 
-    lr = 0.01
+    lr = 0.1
     df = 0.95
     episodes = 300
 
     # Environment
     env = Environment()
 
-    replay_memory = ReplayMemory(10, 20)
+    replay_memory = ReplayMemory(50, 100)
 
     itr = 3
     current_itr = 0
@@ -132,23 +134,26 @@ def neural_net_q_learning():
             steps += 1
 
             if env.is_final_state(state):
-                print("Final State")
+                print("\nFinal State\n")
+                nn.save('model')
                 break
 
             # Get Current QValue
-            outputs = nn.predict(np.array([state]).reshape(1, 16))[0]
+            _input = np.array([state]).reshape(1, 16) / 3
+            outputs = nn.predict(_input)[0]
             action = np.argmax(outputs)
 
             # Exploration VS Exploitation
             rnd = random.random()
-            if rnd < 1:
+            if eps >= 0.01 and rnd < eps or steps >= 10:
+                print("Random Move")
                 action_index = random.sample(range(len(env.actions)), 1)[0]
                 action = env.actions[action_index]
 
-            if eps > 0.01:
+            if eps >= 0.01:
                 eps *= eps_step
 
-            print(action, '\n')
+            # print(actions[action], '\n')
 
             # Get the next experience
             experience = env.make_transition(state, action)
@@ -156,123 +161,63 @@ def neural_net_q_learning():
 
             # Training
             if replay_memory.can_sample():
-
+                print('Training')
                 experiences = replay_memory.sample()
 
                 _inputs = []
-                _target = []
-                _rewards = []
-                _outputs = []
-
-                mp = []
-                _inputs_next = []
+                _actions = []
                 _q_next = []
+
+                valid_next_states = []
+                valid_map = []
+                rewards = []
 
                 for j in range(len(experiences)):
                     exp = experiences[j]
                     state, action, reward, next_state = exp.split()
 
+                    rewards.append(reward)
                     _inputs.append(state)
-                    _rewards.append(reward)
+                    _actions.append(action)
+                    _q_next.append(0)
 
                     if next_state is not None:
-                        mp.append(j)
-                        _inputs_next.append(next_state)
-
-                    _q_next.append(0)
-                    # inp = as_np_array([state]) / 3
-                    #
-                    # output = nn.predict(inp)[0]
-                    # _outputs.append(output)
-                    # action = np.argmax(output)
-                    #
-                    # q = max(output)
-                    #
-                    # q_next = 0
-                    # if next_state is not None:
-                    #     output_next = nn.predict(as_np_array([next_state]))[0]
-                    #     q_next = max(output_next)
-                    #
-                    # q_target = (1 - lr) * q + lr * (reward + df * q_next)
-                    #
-                    # target = np.array(output, copy=True)
-                    # target[action] = q_target
-                    #
-                    # _input.append(state)
-                    # _target.append(target)
+                        valid_next_states.append(next_state)
+                        valid_map.append(j)
 
                 _inputs = np.array(_inputs, dtype='float32').reshape(len(_inputs), 16) / 3
                 _outputs = nn.predict(_inputs)
 
-                print(_outputs)
+                _targets = np.array(_outputs, copy=True)
 
-                _inputs_next = np.array(_inputs_next, dtype='float32').reshape(len(_inputs_next), 16) / 3
+                _inputs_next = np.array(valid_next_states, dtype='float32').reshape(len(valid_next_states), 16) / 3
                 _outputs_next = nn.predict(_inputs_next)
 
-                _temp_q_next = np.amax(_outputs_next, 1)
+                for j in range(len(valid_map)):
+                    ind = valid_map[j]
+                    _q_next[ind] = np.argmax(_outputs_next[j])
 
-                for j in range(len(mp)):
-                    inx = mp[j]
-                    _q_next[inx] = _temp_q_next[j]
+                current_q = np.amax(_outputs, axis=1)
 
-                _rewards = np.array(_rewards, dtype='float32')
-                _q_next = np.array(_q_next, dtype='float32')
+                for j in range(len(_targets)):
+                    _targets[j][_actions[j]] = rewards[j] + _q_next[j] * df
 
-                _q_current = np.amax(_outputs, 1)
-                _q_target = _q_current * (1 - lr) + lr * (_rewards + np.array(_q_next) * df)
-
-                for j in range(len(_outputs)):
-                    _output = _outputs[j]
-                    act = np.argmax(_output)
-                    _output[act] = _q_target[j]
-
-                _target = _outputs
-                print(_target)
-                # print('Input\n', _input)
-                # print('Target\n', _target)
-                # print('Output\n', _outputs)
-
-                nn.fit(_inputs, _target, epochs=5, batch_size=10)
+                # print(_outputs[:2])
+                # print(_targets[:2])
+                nn.fit(_inputs, _targets, epochs=1, batch_size=10, verbose=0)
 
                 current_itr += 1
 
-                # if current_itr == itr:
-                #     current_itr = 0
-                #     target_nn = copy_model(nn)
-
-                # for experience in experiences:
-                #     state = experience.state
-                #     reward = experience.reward
-                #     next_state = experience.next_state
-                #
-                #     # Get QValue
-                #     output = nn_get_output(nn, state)
-                #     action = np.argmax(output[0])
-                #     predicted_q = output[0][action]
-                #
-                #     # Get Next QValue
-                #     predicted_q_next = 0
-                #
-                #     if next_state is not None:
-                #         output_next = nn_get_output(nn, next_state)
-                #         action_next = np.argmax(output_next[0])
-                #         predicted_q_next = output_next[0][action_next]
-                #
-                #     target = (1 - lr) * predicted_q + lr * (reward + df * predicted_q_next)
-                #
-                #     nn_target = np.array(predictions, copy=True)
-                #     nn_target[0][action] = target
-                #
-                #     _input.append(raw_to_nn_input([state])[0])
-                #     _target.append(nn_target[0])
-                #
-                # nn.fit(_input, _target, epochs=5)
-
             state = experience.next_state
+
+            if state is None:
+                print("Dead")
+
+            print("\n")
 
 
 def main():
-    # simple_q_learning()
+    # iterative_q_learning()
     neural_net_q_learning()
 
 

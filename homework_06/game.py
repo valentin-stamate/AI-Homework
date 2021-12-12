@@ -81,19 +81,35 @@ class Environment:
 
         if changed:
             new_state[player[0]][player[1]] = CellType.SOLID
+
+            new_player = Environment.player_position(new_state)
+
+            i = new_player[0]
+            j = new_player[1]
+
+            if state[i][j] == CellType.HOLE:
+                return Experience(state, action, -50, None)
+
         else:
             new_state = Environment.copy_state(state)
 
         reward = 0
 
-        new_player = Environment.player_position(new_state)
+        # If The Player Moved to a
+        if action == ActionType.LEFT and player[1] == 0:
+            reward = -10
 
-        if state[new_player[0]][new_player[1]] == CellType.HOLE:
-            reward = -1
-            new_state = None
+        if action == ActionType.UP and player[0] == 0:
+            reward = -10
 
-        if state[new_player[0]][new_player[1]] == CellType.FINISH:
-            reward = 1
+        if action == ActionType.RIGHT and player[1] == 3:
+            reward = -10
+
+        if action == ActionType.DOWN and player[0] == 3:
+            reward = -10
+
+        if Environment.is_final_state(new_state):
+            reward = 100
 
         return Experience(state, action, reward, new_state)
 
