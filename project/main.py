@@ -1,80 +1,80 @@
 from stockfish import Stockfish
+import chess
+
+
+def colored(text, r, g, b, ):
+    return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, text)
+
+
+def print_black(obj):
+    print(colored(obj, 100, 100, 100))
+
+
+def print_white(obj):
+    print(colored(obj, 255, 255, 255))
+
+
+def to_list(moves: [chess.Move]):
+    str_moves = []
+
+    for move in moves:
+        str_moves.append(move.uci())
+
+    return str_moves
 
 
 def start():
     env_path = 'stockfish_14.1_win_x64_avx2.exe'
-    # Stockfish is white, down, UPPERCASE
+    # Stockfish is black, up, lowercase
     stockfish = Stockfish(env_path, parameters={'Threads': 1})
-    stockfish.set_position([])
 
-    # Agent is black, up, lowecase
+    # Agent is white, down, UPPERCASE
     agent = Stockfish(env_path, parameters={'Threads': 1})
     agent.set_depth(1)
-    agent.set_position([])
 
+    game = chess.Board()
     ms = 500
 
-    for i in range(0, 1200):
-        print("Stockfis")
-        st_move = stockfish.get_best_move_time(1000)
-        st_eval = stockfish.get_evaluation()
+    while True:
+        # ---------------================== Agent | White ==================---------------
+        print_white(game)
+        moves = to_list(game.legal_moves)
 
-        if st_move is None:
-            print("Agent wins")
-            print(stockfish.get_board_visual())
-            break
-
-        print(f"    Eval{stockfish.get_evaluation()}")
-        print(f"    Move {st_move}")
-
-        stockfish.make_moves_from_current_position([st_move])
-        agent.make_moves_from_current_position([st_move])
-
-        print("Agent")
         agent_move = agent.get_best_move()
-        agent_eval = agent.get_evaluation()
 
-        if agent_move is None:
-            print("Stockfish wins")
-            print(stockfish.get_board_visual())
-            break
-
-        print(f"    Eval{agent.get_evaluation()}")
-        print(f"    Move {agent_move}")
+        print_white(f"Agent move : {agent_move}")
+        print_white(f"Possible moves: {moves}")
 
         stockfish.make_moves_from_current_position([agent_move])
         agent.make_moves_from_current_position([agent_move])
+        game.push(chess.Move.from_uci(agent_move))
 
-        print(stockfish.get_board_visual())
+        if game.is_checkmate():
+            print("Agent wins.")
+            break
+
+        print('\n')
+        # ---------------================== Stockfish | Black ==================---------------
+        print_black(game)
+        moves = to_list(game.legal_moves)
+
+        st_move = stockfish.get_best_move_time(ms)
+
+        print_black(f"Stockfish move : {st_move}")
+        print_black(f"Possible moves: {moves}")
+
+        stockfish.make_moves_from_current_position([st_move])
+        agent.make_moves_from_current_position([st_move])
+        game.push(chess.Move.from_uci(st_move))
+
+        if game.is_checkmate():
+            print("Stockfish wins.")
+            break
+
+        print('\n')
+
 
 def main():
-    # env_path = 'stockfish_14.1_win_x64_avx2.exe'
-    # stockfish = Stockfish(env_path, parameters={'Threads': 1})
-    #
-    # agent = Stockfish(env_path, parameters={'Threads': 1})
-    # agent.set_depth(1)
-    #
-    # print(agent.get_evaluation(), stockfish.get_evaluation())
-    #
-    # # Makes a move
-    # stockfish.set_position(['e2e4']) # down, up - white, black
-    # agent.set_position(['e2e4', 'e7e6'])
-    #
-    # print(stockfish.get_board_visual())
-    #
-    # print(agent.get_evaluation(), stockfish.get_evaluation())
-    # # This is how we'll interact with the stockfish
-    # move = stockfish.get_best_move_time(500)
-    # print(move)
-    #
-    # stockfish.make_moves_from_current_position(['e3e4'])
-    # agent.make_moves_from_current_position(['e2e4'])
-    #
-    # print(stockfish.get_evaluation(), agent.get_evaluation())
-    #
-    # print(stockfish.get_board_visual())
-    # print(stockfish.get_fen_position())
-
     start()
 
 

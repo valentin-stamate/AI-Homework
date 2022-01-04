@@ -217,8 +217,8 @@ def neural_net_q_learning():
 
 
 def main():
-    # iterative_q_learning()
-    neural_net_q_learning()
+    iterative_q_learning()
+    # neural_net_q_learning()
 
 
 if __name__ == '__main__':
