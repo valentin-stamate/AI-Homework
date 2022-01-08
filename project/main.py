@@ -12,7 +12,7 @@ def get_best_move(agent: Stockfish):
     best_move = BestMove()
 
     game = chess.Board(agent.get_fen_position())
-    minimax(game, 0, True, -INFINITY, +INFINITY, 3, best_move)
+    minimax(game, 0, 1, best_move)
 
     if best_move.move == '':
         print("Something went wrong")

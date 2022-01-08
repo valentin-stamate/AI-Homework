@@ -7,7 +7,14 @@ INFINITY = 5000
 ENV_PATH = 'stockfish_14.1_win_x64_avx2.exe'
 
 
-def minimax(game: chess.Board, depth, is_maximizing_player, alpha, beta, max_depth, best_move: BestMove):
+cache = {}
+
+
+def minimax(game: chess.Board, depth, max_depth, best_move: BestMove):
+    state = f'{game.fen()}{depth % 2}'
+
+    if state in cache:
+        return cache[state]
 
     if depth == max_depth:
         fen_position = game.fen()
@@ -17,46 +24,31 @@ def minimax(game: chess.Board, depth, is_maximizing_player, alpha, beta, max_dep
         agent.set_fen_position(fen_position)
 
         v = agent.get_evaluation()
-        print(v, is_maximizing_player)
-        return v['value']
+        print(v)
+        return v
 
-    if is_maximizing_player:
-        best_val = -INFINITY
+    best_val = -INFINITY
+    best_eval = None
 
-        moves = to_list(game.legal_moves)
-        for move in moves:
-            game.push(chess.Move.from_uci(move))
-            value = minimax(game, depth + 1, False, alpha, beta, max_depth, best_move)
-            game.pop()
+    moves = to_list(game.legal_moves)
+    for move in moves:
+        game.push(chess.Move.from_uci(move))
+        _eval = minimax(game, depth + 1, max_depth, best_move)
+        game.pop()
 
-            if value > best_val:
-                best_val = value
-                best_move.move = move
+        if _eval['type'] == 'mate':
+            if depth % 2 == 0:
+                _eval['value'] = 10000
+            if depth % 2 == 1:
+                _eval['value'] = -10000
 
-            alpha = max(alpha, best_val)
+        value = _eval['value']
 
-            if beta <= alpha:
-                break
+        if value > best_val:
+            best_val = value
+            best_move.move = move
+            best_eval = _eval
 
-        return best_val
+    cache[state] = best_eval
 
-    else:
-        best_val = -INFINITY
-
-        moves = to_list(game.legal_moves)
-
-        for move in moves:
-            game.push(chess.Move.from_uci(move))
-            value = minimax(game, depth + 1, True, alpha, beta, max_depth, best_move)
-            game.pop()
-
-            if value > best_val:
-                best_val = value
-                best_move.move = move
-
-            alpha = max(alpha, best_val)
-
-            if beta <= alpha:
-                break
-
-        return best_val
+    return best_eval
