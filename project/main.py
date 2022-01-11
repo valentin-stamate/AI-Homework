@@ -1,35 +1,36 @@
 from stockfish import Stockfish
 import chess
 import chess.pgn
-from minimax import minimax, INFINITY
+from minimax import minimax
 from models import BestMove
-from util import print_white, print_black
+from util import print_white, print_black, to_list
+import matplotlib.pyplot as plt
 
 ENV_PATH = 'stockfish_14.1_win_x64_avx2.exe'
+FILE = 'stats.txt'
+DEPTH = 1
 
 
 def get_best_move(agent: Stockfish):
-    best_move = BestMove()
-
     game = chess.Board(agent.get_fen_position())
-    minimax(game, 0, 1, best_move)
 
-    if best_move.move == '':
-        print("Something went wrong")
+    _eval = minimax(game, 0, DEPTH)
 
-    return best_move.move
+    return _eval['move']
 
 
 def start():
     env_path = ENV_PATH
     # Stockfish is black, up, lowercase
     stockfish = Stockfish(env_path, parameters={'Threads': 1})
+    stockfish.set_position([])
 
     # Agent is white, down, UPPERCASE
     agent = Stockfish(env_path, parameters={'Threads': 1})
+    stockfish.set_position([])
     agent.set_depth(1)
 
-    game = chess.Board()
+    game = chess.Board(stockfish.get_fen_position())
     pgn_game = chess.pgn.Game()
     node = pgn_game
 
@@ -88,9 +89,44 @@ def start():
     pgn_game.headers["Moves"] = str(total_moves)
     print("Game PGN\n", pgn_game)
 
+    with open(FILE, 'a') as f:
+        f.write('PGN\n')
+        f.write(pgn_game.__str__())
+
+    return total_moves
+
 
 def main():
-    start()
+    with open(FILE, 'a') as f:
+        f.write(f'Game starts. Depth {DEPTH}\n')
+
+    x = []
+    for i in range(0, 10):
+        with open(FILE, 'a') as f:
+            f.write(f"Game {i}\n")
+
+        try:
+            moves = start()
+            x.append(moves)
+        except Exception as e:
+            print('Something went wrong')
+            print(e)
+
+        plt.plot(x)
+        plt.show()
+
+        with open(FILE, 'a') as f:
+            f.write(f"\n\n")
+
+    plt.plot(x)
+    plt.title(f'Agent(depth {DEPTH}) VS Stockfish')
+    plt.xlabel('Game')
+    plt.ylabel('Moves')
+    plt.show()
+
+    with open(FILE, 'a') as f:
+        f.write('Evolution\n')
+        f.write(x.__str__())
 
 
 if __name__ == '__main__':
