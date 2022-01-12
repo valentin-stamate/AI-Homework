@@ -1,0 +1,35 @@
+3. 
+a. 
+0.8
+Nu influenteaza
+
+b. 
+P(Febra = 1) = 0.1163 (actual value 0.1255)
+P(Febra = 0) = 0.8837 (actual value 0.8745)
+P(Obosela = 1) = 0.264
+P(Obosela = 0) =  0.736
+P(Anorexie = 1) = 0.1488
+P(Anorexie = 0) = 0.8512
+
+c.
+P(Ob | Gr = 1) = <0.4852, 0.5248>
+
+d
+P(Ob | Gr = 1, Fe = 1) = <0.1978, 0.8022>
+Gripa e irelevant.
+
+ll.
+
+a.
+i F
+ii A
+
+b.
+P(b, i, !m, g, j) = P(b) * P(i|b, !m) * P(!m) * P(g|b, i, !m) * P(j|g)
+                  = 0.9 * 0.5 * 0.1 * 0.8 * 0.9 = 0.0324
+
+c.
+P(j = 1 | b = 1, g = 1, m = 1) = P(j = 1 | g = 1) = 0.9
+
+d.
+
