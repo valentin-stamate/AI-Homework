@@ -1,3 +1,5 @@
+http://www.cs.man.ac.uk/~gbrown/bayes_nets/#
+
 3. 
 a. 
 0.8
