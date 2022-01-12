@@ -1,0 +1,1379 @@
+Game starts. Depth 1
+Game 0
+
+
+Game 1
+
+
+Game 2
+
+
+Game 3
+
+
+Game 4
+
+
+Game 5
+
+
+Game 6
+
+
+Game 7
+
+
+Game 8
+
+
+Game 9
+
+
+Evolution
+[]Game starts. Depth 1
+Game 0
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "54"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 O-O 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nbd7 10. Be2 dxc4 11. Bxc4 a6 12. a4 b6 13. O-O Bb7 14. Qe2 Qb8 15. Rfd1 h6 16. h3 Qa7 17. Ne5 Nxe5 18. Bxe5 Bc6 19. Bb5 axb5 20. axb5 Bxb5 21. Qxb5 Qd7 22. Qe2 Rxa1 23. Rxa1 Qd5 24. Bd4 b5 25. Qf3 Rc8 26. Kf1 Qxf3 27. Nb1 Rc1# 0-1
+
+Game 1
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "66"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Re8 12. Re1 Rc8 13. h3 Nf8 14. a3 Rc7 15. Ne5 Ng6 16. b4 dxc4 17. Rxc4 Rxc4 18. Ndxc4 Qc7 19. Ne3 a6 20. Qc2 Qxc2 21. Bxc2 Nf4 22. Nd3 N6d5 23. Bb1 Nxe3 24. Nxf4 Nc4 25. Bc1 a5 26. Bd3 Rc8 27. Nxe6 fxe6 28. Bxc4 Rxc4 29. Bf4 Bd5 30. Bg3 a4 31. Bd6 Bxd6 32. Rxe6 Rc1+ 33. Re1 Rxe1# 0-1
+
+Game 2
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "58"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 e6 5. Nc3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Bb7 9. O-O a6 10. a4 b4 11. Ne4 Be7 12. Nxf6+ Bxf6 13. e4 c5 14. e5 Be7 15. Be3 cxd4 16. Bxd4 Bc5 17. Be2 Rc8 18. Qd2 Bxf3 19. Bxa6 Bxd4 20. Qxd4 Nb8 21. Qxd8+ Rxd8 22. Bb5+ Bc6 23. Rfc1 Bxb5 24. axb5 Ke7 25. Ra8 Nd7 26. Ra7 Ra8 27. b6 Rxa7 28. Rc8 Ra1+ 29. Rc1 Rxc1# 0-1
+
+Game 3
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 e4 10. Nd4 Nc6 11. Be2 Bc5 12. Nxc6 bxc6 13. O-O d4 14. Bxd4 Bxd4 15. exd4 Qxd4 16. Qc2 e3 17. fxe3 Qxe3+ 18. Rf2 Bg4 19. Qd3 Qe5 20. Re1 Rad8 21. Nf3 Qc5 22. Qc2 Bf5 23. Qc1 Ne4 24. Kf1 Qxf2# 0-1
+
+Game 4
+Game starts. Depth 1
+Game 0
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "30"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 cxd4 7. Qxd4 O-O 8. Nbd2 Nc6 9. Qc3 e5 10. Nxe5 Bb4 11. Qc2 Nxe5 12. Bxe5 Ne4 13. Rd1 Re8 14. Bd4 Qh4 15. Bxg7 Qxf2# 0-1
+
+Game 1
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "66"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nbd7 10. Be2 b6 11. O-O Bb7 12. Rc1 Bf8 13. h3 Rc8 14. Re1 Qe7 15. cxd5 Nxd5 16. a3 a6 17. b4 Rxc1 18. Qxc1 Rc8 19. Qa1 a5 20. b5 Nc5 21. Rc1 Na4 22. Nc4 Nxb2 23. Qxb2 g6 24. Nfe5 Bg7 25. Bf3 Rc5 26. Rc2 Qc7 27. Bd1 Ne7 28. a4 Be4 29. Rd2 Rxc4 30. Nxc4 Bxb2 31. Nd6 Bd5 32. Rxb2 Qc1 33. Kf1 Qxd1# 0-1
+
+Game 2
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "92"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Bxb1 6. Rxb1 e6 7. Nf3 Nbd7 8. Qb3 Qb6 9. Qc2 Bb4+ 10. Bd2 O-O 11. a3 Bxd2+ 12. Nxd2 e5 13. Nf3 exd4 14. Nxd4 Rfe8 15. Be2 c5 16. Nf3 Qa5+ 17. Qd2 Qxd2+ 18. Nxd2 d4 19. Bf3 dxe3 20. Nb3 Rad8 21. Rd1 b6 22. Bc6 exf2+ 23. Kxf2 Kf8 24. h3 Re6 25. Bf3 Rde8 26. Rhe1 Rxe1 27. Rxe1 Ne5 28. Be2 Ne4+ 29. Kg1 Ng3 30. Nd2 Nd3 31. Ne4 Rxe4 32. Rd1 Nxe2+ 33. Kf1 Ng3+ 34. Kg1 Nxb2 35. Rd8+ Re8 36. Rxe8+ Kxe8 37. Kf2 Ne4+ 38. Ke3 Nd6 39. Kf4 Ndxc4 40. Kg4 Nxa3 41. Kf3 c4 42. Ke3 c3 43. Kd4 c2 44. Kc3 c1=Q+ 45. Kb4 Qe3 46. h4 a5# 0-1
+
+Game 3
+
+
+Game 4
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "42"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Qa5+ 18. Kf1 Rxd4 19. Rd1 Rxd1+ 20. Bxd1 Qd2 21. Rg1 Qxd1# 0-1
+
+Game 5
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "32"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 a6 9. Be2 dxc4 10. Nxc4 b5 11. Bf3 bxc4 12. Bxa8 Bb4+ 13. Ke2 c3 14. Bc1 a5 15. Nc2 Qb6 16. Kd3 Ba6# 0-1
+
+Game 6
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "46"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Nh5 14. g3 Nhf6 15. a3 h6 16. Bb1 Qc8 17. Qd3 Rd8 18. Qe2 Ba8 19. Nh4 Qa6 20. Bc2 dxc4 21. bxc4 Bxa3 22. Ra1 Qb7 23. Ng6 Qh1# 0-1
+
+Game 7
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "66"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 Qc7 12. O-O e5 13. Bc3 Bf5 14. Qb3 Rfe8 15. Rfd1 Nd7 16. Qb2 Bf8 17. Nf3 f6 18. Nh4 Be6 19. Nf3 Red8 20. Rac1 Qb6 21. Rb1 Qxb2 22. Rxb2 Nc5 23. Rbd2 Rdc8 24. Bb4 Ne4 25. Rb2 Bxb4 26. Rxb4 Nc3 27. Bd3 Nxd1 28. Bb1 Rxc4 29. Rxc4 Bxc4 30. Be4 Nc3 31. Bxb7 Rb8 32. Bc8 Rb1+ 33. Ne1 Rxe1# 0-1
+
+Game 8
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Bb4 14. Red1 Qa8 15. Nf1 dxc4 16. Rxc4 Bd6 17. Rxc7 Bxc7 18. Ne3 Qb8 19. Ne5 Nxe5 20. dxe5 Bxe5 21. h3 Bxb2 22. Qxb2 Rd8 23. Qc3 h6 24. Qb4 Qc7 25. Qe1 Rd7 26. Bf1 Ne4 27. f3 Rxd1 28. Nxd1 Ng3 29. Ne3 Qd6 30. a4 Nxf1 31. Kh1 Qh2# 0-1
+
+Game 9
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Bg4 12. Be2 Bxe2 13. Qxe2 dxc4 14. O-O cxb3 15. Nxb3 Qd5 16. Bb2 Qe4 17. Rac1 Rfc8 18. Rfd1 a6 19. h3 b5 20. Nd4 Bf8 21. a3 Nd5 22. Qd2 Nb6 23. f3 Qe8 24. Nf5 Nc4 25. Qd4 Nxb2 26. Qxb2 g6 27. Qf6 Rxc1 28. Nh6+ Bxh6 29. Qd6 Qxe3+ 30. Kf1 Bf4 31. Qe7 Rxd1# 0-1
+
+Game 10
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "86"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Be6 6. Qb3 Qb6 7. Nc3 dxc4 8. Bxc4 Bxc4 9. Qxc4 e6 10. Nf3 Be7 11. O-O Qa6 12. Qxa6 Nxa6 13. Bd2 c5 14. Rfd1 cxd4 15. Nxd4 O-O 16. Be1 Nc5 17. Kf1 Rfd8 18. b4 Ncd7 19. a3 Nb6 20. Nb3 Rxd1 21. Rxd1 Nc4 22. Nb5 a6 23. Nc7 Rc8 24. Nxa6 bxa6 25. Rc1 Nd5 26. Ke2 Ndb6 27. Nd4 Nxa3 28. Rc6 Rxc6 29. Nxc6 Bd6 30. b5 Nxb5 31. Bb4 Bxb4 32. Nxb4 a5 33. Nc6 a4 34. Kd3 Kf8 35. Nd4 Nc7 36. Nxe6+ Nxe6 37. Ke4 a3 38. Kf3 a2 39. h3 a1=Q 40. g4 Qf1 41. Kg3 Ng5 42. Kh2 Qxh3+ 43. Kg1 Nf3# 0-1
+
+Game 11
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Rxd4 18. Rf1 Qa5+ 19. b4 Qxb4# 0-1
+
+Game 12
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "66"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Bg4 12. Be2 Bxe2 13. Qxe2 dxc4 14. O-O cxb3 15. Nxb3 Qd5 16. Bb2 Rfd8 17. Rfd1 Qe4 18. Rac1 Qa4 19. Rxd8+ Rxd8 20. Bd4 Ne8 21. g3 h6 22. Rc4 Qd7 23. Rc2 b6 24. Qa6 Nd6 25. Rc1 Ne4 26. f4 Nd6 27. Kf2 Nb5 28. a4 Nxd4 29. Nxd4 Bc5 30. Qb5 Qh3 31. Nf3 Qe6 32. Ke2 Qxe3+ 33. Kf1 Qf2# 0-1
+
+Game 13
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bb7 6. Qc2 Be7 7. cxd5 exd5 8. Be2 O-O 9. O-O Nbd7 10. Rd1 Re8 11. b3 Rc8 12. Bb2 a6 13. Ne5 Bd6 14. f4 c5 15. Bf3 cxd4 16. exd4 Nf8 17. Qd3 b5 18. Ne2 Qb6 19. Ng3 Ng6 20. Bc1 Rxc1 21. Raxc1 Nxf4 22. Ng4 Nxg4 23. Bxg4 Nxd3 24. Rxd3 Bxg3 25. Bd1 Re1# 0-1
+
+Game 14
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "34"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 cxd4 7. Qxd4 Nc6 8. Qd1 Ne4 9. Bd3 Bf6 10. Qe2 Nb4 11. Bd4 e5 12. Nxe5 Bxe5 13. Bxe5 Bg4 14. f3 Bxf3 15. gxf3 Nxd3+ 16. Qxd3 Qh4+ 17. Kf1 Qf2# 0-1
+
+Game 15
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "46"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 O-O 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nbd7 10. Be2 dxc4 11. Bxc4 b6 12. Ng5 Bb7 13. Bxe6 fxe6 14. Nxe6 Qc8 15. Rc1 Nc5 16. Nxc5 bxc5 17. Bxf6 Bxf6 18. Qc2 Bxg2 19. Rg1 Rxe3+ 20. fxe3 Bh4+ 21. Ke2 Qg4+ 22. Kd3 Rd8+ 23. Kc3 Bf6# 0-1
+
+Game 16
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Bg4 12. Be2 Bxe2 13. Qxe2 dxc4 14. O-O cxb3 15. Nxb3 Qd5 16. Bb2 Qe4 17. Rac1 Rfc8 18. Rfd1 h6 19. h3 a6 20. Nd4 Bf8 21. a4 Nd7 22. a5 Ne5 23. f3 Qd5 24. f4 Rxc1 25. Rxc1 Ng6 26. Qf3 Qxa5 27. Qxb7 Re8 28. f5 Nh4 29. Re1 Qxe1+ 30. Kh2 Bd6+ 31. g3 Bxg3# 0-1
+
+Game 17
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "104"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 Qc7 12. O-O b6 13. Bf3 Bb7 14. Qe2 Bxf3 15. Nxf3 Rac8 16. Rac1 Ne4 17. Rfd1 Rfd8 18. Qc2 Qb7 19. Ba1 Rxd1+ 20. Qxd1 Ba3 21. Rc2 Bf8 22. h4 f6 23. Bb2 e5 24. h5 Qf7 25. h6 g6 26. Nd2 Qd7 27. Qe2 Ng5 28. Nf3 Nf7 29. Rd2 Qc6 30. Qd1 Qxc4 31. a4 Bxh6 32. Rd7 Rc7 33. Ba3 Bf8 34. Rd8 Nxd8 35. Qxd8 Rc8 36. Qxf6 Bxa3 37. Kh2 e4 38. Ne5 Qd5 39. Kg3 Bd6 40. Qg5 Qxe5+ 41. Qxe5 Bxe5+ 42. f4 exf3+ 43. Kxf3 Rc4 44. a5 bxa5 45. Kf2 a4 46. Kf3 Kf7 47. g3 a3 48. g4 a2 49. g5 a1=Q 50. Kf2 Rc2+ 51. Kf3 Qh1+ 52. Kg4 Qh5# 0-1
+
+Game 18
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "28"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 cxd4 7. Qxd4 O-O 8. Nbd2 Nc6 9. Qc3 e5 10. Nxe5 Bb4 11. Qc2 Nxe5 12. Bxe5 Ne4 13. Rd1 Qh4 14. Bb8 Qxf2# 0-1
+
+Game 19
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Rb8 12. Bxc6 a6 13. Ne4 Bb4+ 14. Bd2 Bxd2+ 15. Kxd2 Rc8 16. Ne5 Rxc6 17. f3 Nxe4+ 18. fxe4 Qg5 19. g3 Rd6 20. Ke2 f6 21. Raf1 Qh5+ 22. g4 Qh3 23. g5 Qg2+ 24. Kd1 Rc8 25. Re1 Qc2# 0-1
+
+Game 20
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "54"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Rb8 12. Bxc6 a6 13. Ne4 Rc8 14. Bb7 Rc7 15. Nxf6+ Qxf6 16. Bxa6 Bb4+ 17. Bd2 Bxd2+ 18. Nxd2 Qg5 19. O-O Qa5 20. Ne4 Qxa6 21. a4 Qa8 22. f3 Qa6 23. b4 Qd3 24. d5 Qxe3+ 25. Nf2 exd5 26. Rfd1 Rc2 27. Kf1 Qxf2# 0-1
+
+Game 21
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "28"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 cxd4 7. Qxd4 O-O 8. Nbd2 Nc6 9. Qc3 e5 10. Nxe5 Bb4 11. Qc2 Nxe5 12. Bxe5 Ne4 13. Rd1 Qh4 14. Bb8 Qxf2# 0-1
+
+Game 22
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "40"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 Qc7 11. a4 O-O 12. Bd2 e5 13. Bd3 exd4 14. Ne4 Nxe4 15. Bxe4 Rfe8 16. Nxd4 Rxe4 17. Nf5 Be5 18. a5 Qd7 19. f3 Rd8 20. Rf1 Qxd2# 0-1
+
+Game 23
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 e4 10. Nd4 Nc6 11. Be2 Bc5 12. Nxc6 bxc6 13. O-O d4 14. Bxd4 Bxd4 15. exd4 Qxd4 16. Qc2 e3 17. fxe3 Qxe3+ 18. Rf2 Bg4 19. Qd3 Qe5 20. Re1 Rad8 21. Nf3 Qc5 22. Qc2 Bf5 23. Qc1 Ng4 24. Kf1 Qxf2# 0-1
+
+Game 24
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "102"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Be6 6. Qb3 Qb6 7. Nc3 dxc4 8. Bxc4 Bxc4 9. Qxc4 e6 10. Nf3 Be7 11. O-O Qa6 12. Qxa6 Nxa6 13. Bd2 c5 14. Rfd1 cxd4 15. Nxd4 O-O 16. Be1 Rfc8 17. Ncb5 Nc5 18. Rac1 a6 19. Nc3 Ncd7 20. Na4 h5 21. Kf1 g5 22. h3 Kf8 23. Nb3 b5 24. Nc3 Ke8 25. Ne2 Rxc1 26. Rxc1 Nd5 27. e4 Nb4 28. Bxb4 Bxb4 29. Ned4 Nf6 30. Nc6 Bf8 31. f3 Nd7 32. Ke2 Bd6 33. Nca5 Bf4 34. Rc2 Ne5 35. Rc3 Ng6 36. Rc2 Bg3 37. Rc1 Nf4+ 38. Kf1 Nd3 39. Rc2 Rd8 40. Rd2 Bf4 41. Rc2 Nb4 42. Rc5 Rd1+ 43. Ke2 Rb1 44. Rc8+ Kd7 45. Nc5+ Kxc8 46. g4 Rxb2+ 47. Kd1 Rd2+ 48. Ke1 Nc2+ 49. Kf1 Ne3+ 50. Ke1 Rxa2 51. Nd7 Bg3# 0-1
+
+Game 25
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 a6 9. Be2 dxc4 10. Nxc4 b5 11. Bf3 bxc4 12. Bxa8 Qa5+ 13. Ke2 e5 14. Nc6 Nxc6 15. Bxc6 c3 16. Bc1 Qc5 17. Ba4 Bf5 18. f3 Rd8 19. Qe1 e4 20. Kf2 c2 21. Bb2 exf3 22. gxf3 Ng4+ 23. Kg3 Qd6+ 24. Kh3 Nxe3# 0-1
+
+Game 26
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "44"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Bb4 12. O-O c5 13. Bxa8 Qxa8 14. Bd2 cxd4 15. exd4 Bxc3 16. Bxc3 Qb7 17. Bd2 Rc8 18. Rfc1 Rxc1+ 19. Rxc1 Nd5 20. Rc8+ Qxc8 21. Bc1 Qxc1+ 22. Ne1 Qxe1# 0-1
+
+Game 27
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Rxd4 18. Rf1 Qa5+ 19. b4 Qxb4# 0-1
+
+Game 28
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "72"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 e4 10. Nd4 Re8 11. Be2 Nc6 12. Rc1 Nxd4 13. Bxd4 dxc4 14. bxc4 Ba3 15. Rb1 b6 16. O-O Nd7 17. f3 Bb7 18. Nxe4 Bxe4 19. fxe4 Bc5 20. Bg4 Ne5 21. Be2 Qh4 22. Rf4 Qe7 23. Qc2 Rad8 24. Rbf1 Bxd4 25. exd4 Rxd4 26. Qb3 Red8 27. Kh1 h6 28. h3 Rd2 29. R4f2 Qc5 30. Kh2 Nd3 31. Rf3 Qe5+ 32. Kh1 Qxe4 33. Bd1 Nf2+ 34. Kh2 Qe5+ 35. Kg1 Nxd1 36. g4 Qh2# 0-1
+
+Game 29
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "28"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 cxd4 7. Qxd4 O-O 8. Nbd2 Nc6 9. Qc3 e5 10. Nxe5 Bb4 11. Qc2 Nxe5 12. Bxe5 Ne4 13. Rd1 Qh4 14. Bb8 Qxf2# 0-1
+
+Game 30
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Rxd4 18. Rf1 Qa5+ 19. b4 Qxb4# 0-1
+
+Game 31
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "46"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Rb8 12. Bxc6 a6 13. Ne4 Rc8 14. Bb7 Rc7 15. Nxf6+ Qxf6 16. Bxa6 Bb4+ 17. Bd2 Bxd2+ 18. Nxd2 Qg5 19. O-O Qa5 20. Ne4 Qxa6 21. a4 Qc4 22. Rfc1 Qxc1+ 23. Rxc1 Rxc1# 0-1
+
+Game 32
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "46"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Bb4 14. Red1 Qa8 15. Nf1 Rfc8 16. Ne3 Nf8 17. h4 Ng6 18. a3 Nf4 19. Qf1 dxc4 20. bxc4 Bxf3 21. gxf3 Qxf3 22. Qh3 Nxh3+ 23. Kh2 Bd6# 0-1
+
+Game 33
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "66"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nbd7 10. Be2 b6 11. O-O Bb7 12. Rc1 Rc8 13. h3 h6 14. a3 dxc4 15. Nxc4 Ne4 16. b4 Bf8 17. Ncd2 Nxd2 18. Qxd2 Nf6 19. Rfd1 Qxd2 20. Nxd2 Red8 21. Nf3 Rxd1+ 22. Rxd1 Nd5 23. Bf1 Be7 24. Ne5 Bf6 25. Rd2 Rc7 26. Kh2 Nc3 27. Ng4 Ne4 28. Nxf6+ gxf6 29. Rd8+ Kg7 30. f3 Rc2 31. Bd4 Nd2 32. g3 Nxf3+ 33. Kh1 Rh2# 0-1
+
+Game 34
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 O-O 7. Nbd2 cxd4 8. Nxd4 a6 9. Be2 dxc4 10. Nxc4 b5 11. Bf3 bxc4 12. Bxa8 Qa5+ 13. Ke2 e5 14. Nc6 Nxc6 15. Bxc6 c3 16. Bc1 Qc7 17. Ba4 Bf5 18. Kf1 c2 19. Be8 cxd1=Q# 0-1
+
+Game 35
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "56"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nbd7 10. Be2 b6 11. O-O Bb7 12. Rc1 Rc8 13. h3 h6 14. a3 dxc4 15. Nxc4 Rc7 16. Ncd2 Rxc1 17. Qxc1 Qa8 18. Qa1 Rc8 19. Rc1 Bf8 20. b4 a5 21. Rxc8 Qxc8 22. Bc3 Nd5 23. Nc4 Nxc3 24. Qxc3 axb4 25. axb4 b5 26. Nfe5 Nxe5 27. Bh5 Qc6 28. Bg6 Qxg2# 0-1
+
+Game 36
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "74"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Bxb1 6. Rxb1 e6 7. Nf3 Nbd7 8. Qb3 Qb6 9. Qc2 c5 10. cxd5 Nxd5 11. a3 cxd4 12. Nxd4 Be7 13. Be2 O-O 14. O-O Bf6 15. Rd1 Rfd8 16. Bd2 Rac8 17. Qb3 Bxd4 18. Qb5 Qxb5 19. Bxb5 Bb6 20. Rbc1 Ne5 21. Be2 Rc6 22. Kf1 f6 23. a4 Rxc1 24. Rxc1 a5 25. b4 Nxb4 26. Bxb4 axb4 27. a5 Bxa5 28. f4 Nc6 29. f5 Rd2 30. Rxc6 bxc6 31. Bc4 Rc2 32. Bxe6+ Kh8 33. h3 Rc3 34. h4 b3 35. Ke2 b2 36. Ke1 Rc2+ 37. Kf1 b1=R# 0-1
+
+Game 37
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "46"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 a6 10. a3 dxc4 11. Bxc4 b5 12. Be2 Bb7 13. a4 b4 14. O-O Nd5 15. Rc1 Nd7 16. h3 Rc8 17. Nc4 Bf6 18. Nfe5 Nxe5 19. Bxe5 Bxe5 20. Nxe5 Nc3 21. Qe1 a5 22. Kh1 Qg5 23. Nxf7 Qxg2# 0-1
+
+Game 38
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "36"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 a6 9. Be2 dxc4 10. Nxc4 b5 11. Bf3 bxc4 12. Bxa8 Qa5+ 13. Ke2 c3 14. Qe1 Bb4 15. Bc1 e5 16. Nc2 Qb5+ 17. Kf3 e4+ 18. Kf4 Bd6# 0-1
+
+Game 39
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "64"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Be4 6. Nc3 h6 7. Qb3 Qb6 8. cxd5 Qxb3 9. axb3 Bxd5 10. Bc4 e6 11. Nf3 Nbd7 12. Bd2 Bxf3 13. gxf3 Bb4 14. Ne4 Bxd2+ 15. Kxd2 Ke7 16. Rhg1 g6 17. b4 e5 18. Nc5 exd4 19. exd4 Nxc5 20. bxc5 Rhd8 21. Kc3 b5 22. Rge1+ Kf8 23. Bb3 a5 24. Red1 Nd5+ 25. Bxd5 Rxd5 26. b4 a4 27. Kd3 Rad8 28. Ke3 Re8+ 29. Kd3 Rf5 30. Re1 Rxf3+ 31. Re3 Rxf2 32. Kc3 Rxe3# 0-1
+
+Game 40
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "44"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Bb4 14. Red1 Qa8 15. Nf1 dxc4 16. Rxc4 Bxf3 17. gxf3 Bd6 18. Ne3 Nd5 19. Nxd5 Qxd5 20. Bc1 Nf6 21. f4 Rd7 22. Kf1 Qh1# 0-1
+
+Game 41
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "42"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bb7 6. Qc2 a6 7. cxd5 exd5 8. Bd3 Bd6 9. O-O O-O 10. Rd1 Re8 11. b3 Nbd7 12. Bb2 Qe7 13. Rac1 Ne4 14. Ne5 Nxe5 15. Nxd5 Bxd5 16. Bxe4 Bxe4 17. Qxe4 Ng6 18. Qxa8 Rxa8 19. h3 Nh4 20. g4 Qe4 21. Bc3 Qg2# 0-1
+
+Game 42
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 c5 5. a3 dxc4 6. Bxc4 a6 7. O-O b5 8. Be2 Nbd7 9. dxc5 Bxc5 10. b4 Be7 11. a4 bxa4 12. Qxa4 O-O 13. Rd1 Qc7 14. Qa5 Qb8 15. b5 Bb7 16. bxa6 Bxa6 17. Bxa6 Nc5 18. Qe1 Rxa6 19. Ba3 Rd8 20. Nc3 Rxd1 21. Qxd1 Nb3 22. Nd4 Nxa1 23. Bxe7 Ne8 24. Qxa1 Rxa1+ 25. Nd1 Rxd1# 0-1
+
+Game 43
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "28"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 cxd4 7. Qxd4 O-O 8. Nbd2 Nc6 9. Qc3 e5 10. Nxe5 Bb4 11. Qc2 Nxe5 12. Bxe5 Ne4 13. Rd1 Qh4 14. Bb8 Qxf2# 0-1
+
+Game 44
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 b6 12. O-O Qc7 13. Bf3 Bb7 14. Qe2 Bxf3 15. Nxf3 Ne4 16. Qc2 Qc6 17. Ne5 Qb7 18. f3 Nc5 19. Nd3 Nxd3 20. Qxd3 Rac8 21. Qc3 f6 22. Qb3 Kh8 23. Rad1 Rc6 24. Bb2 Rfc8 25. Ba3 Rxc4 26. Rd3 h6 27. Rfd1 Bxa3 28. Qxa3 Qc7 29. Rd7 Rc1 30. Qxc1 Qxc1 31. Re1 Qxe1# 0-1
+
+Game 45
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "60"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 Bb4+ 4. Bd2 Be7 5. Nc3 d5 6. e3 O-O 7. Rc1 b6 8. cxd5 exd5 9. Be2 Bb7 10. O-O c5 11. Ne5 Nc6 12. Bf3 Rc8 13. Nxc6 Bxc6 14. b3 cxd4 15. exd4 Ne4 16. Rc2 Bb7 17. Re1 f5 18. Be2 Bd6 19. Nxe4 dxe4 20. g3 Rxc2 21. Qxc2 Kh8 22. Qc1 f4 23. Bxf4 Bxf4 24. gxf4 Qd6 25. Qe3 h6 26. Kf1 Rxf4 27. Rc1 Rf8 28. Kg1 Rf5 29. Kh1 Rxf2 30. Qg5 Qxh2# 0-1
+
+Game 46
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "78"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 dxc4 14. bxc4 Bb4 15. Red1 Qa8 16. Bc2 Re8 17. h3 Bd6 18. Rb1 Nf8 19. Re1 Ng6 20. g3 Qc8 21. Qd3 Bb4 22. a3 Ba5 23. Rec1 e5 24. Qf5 e4 25. Nh4 Nxh4 26. Qxc8 Rcxc8 27. Ba4 e3 28. Nb3 Nf3+ 29. Kg2 Nxd4+ 30. Kf1 e2+ 31. Kg1 Nxb3 32. Re1 Nd2 33. Bxe8 Nf3+ 34. Kg2 Nxe1+ 35. Kg1 Nf3+ 36. Kg2 Rxe8 37. Rc1 e1=Q 38. Bxf6 Nh4+ 39. Kh2 Qxf2# 0-1
+
+Game 47
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 e4 10. Nd4 Nc6 11. Be2 Bc5 12. Nxc6 bxc6 13. O-O d4 14. Bxd4 Bxd4 15. exd4 Qxd4 16. Qc2 e3 17. fxe3 Qxe3+ 18. Rf2 Bg4 19. Qd3 Qe5 20. Re1 Rad8 21. Nf3 Qc5 22. Qc2 Bf5 23. Qc1 Ng4 24. Kf1 Qxf2# 0-1
+
+Game 48
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "68"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 Qc7 12. O-O b6 13. Bf3 Rb8 14. Rc1 Nd7 15. h3 Rd8 16. Qc2 Bb7 17. Rfd1 Rbc8 18. Qb1 Bxf3 19. Nxf3 Qb7 20. Rc2 Qe4 21. Nd2 Qc6 22. Nf3 Qa4 23. Qb3 Nc5 24. Qb1 Nb7 25. Qb3 Qe8 26. Qb1 f6 27. c5 Bxc5 28. Bxc5 Rxc5 29. Rcd2 Rxd2 30. Rxd2 Qc6 31. Nd4 Rc1+ 32. Rd1 Rxb1 33. g3 Rxd1+ 34. Kh2 Qh1# 0-1
+
+Game 49
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 b6 12. O-O Qc7 13. Bf3 Rb8 14. Rc1 Ba3 15. Rc3 Bd6 16. c5 bxc5 17. Bxf6 gxf6 18. Be2 Bxh2+ 19. Kh1 Be5 20. Rc2 f5 21. Qc1 Bd6 22. Kg1 Rd8 23. Nb3 Bb7 24. g4 Bh2# 0-1
+
+Game 50
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "42"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 b6 7. Nbd2 Bb7 8. Be2 Nbd7 9. Rc1 c5 10. O-O Rc8 11. a3 dxc4 12. Nxc4 h6 13. Nce5 Nxe5 14. Nxe5 cxd4 15. Rxc8 Qxc8 16. Qxd4 Rd8 17. Qc4 Rd2 18. Rb1 Qxc4 19. Kf1 Qxe2+ 20. Kg1 Qxf2+ 21. Kh1 Qxg2# 0-1
+
+Game 51
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "52"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Rb8 12. Bxc6 a6 13. Ne4 Rc8 14. Bb7 Rc7 15. Nxf6+ Qxf6 16. Bxa6 Bb4+ 17. Bd2 Bxd2+ 18. Nxd2 Qg5 19. O-O Qa5 20. Ne4 Qxa6 21. a4 Rc2 22. b4 h6 23. a5 Ra8 24. Rac1 Rb2 25. Rb1 Rxb1 26. Nd6 Qxf1# 0-1
+
+Game 52
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "70"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 e6 5. Nc3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. O-O c5 10. Ne4 c4 11. Bc2 Bb7 12. Nxf6+ Nxf6 13. Qe2 Be7 14. e4 O-O 15. Bd2 Qb6 16. b3 Rfc8 17. e5 Nd5 18. Bg5 h6 19. Bxe7 Nxe7 20. Rad1 cxb3 21. axb3 Rc3 22. Rd3 Rac8 23. Bb1 Nd5 24. g3 Rc1 25. Qd2 Qc6 26. Re1 b4 27. h4 a5 28. Kh2 Ba6 29. h5 Kf8 30. Nh4 Bxd3 31. Rxc1 Qxc1 32. Qxd3 Qe1 33. Ng6+ fxg6 34. Kh3 Qh1+ 35. Kg4 Qxh5# 0-1
+
+Game 53
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "76"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Re8 13. h3 Rc7 14. a3 Qa8 15. Re3 Nf8 16. Ne5 Rec8 17. Qe2 dxc4 18. Rxc4 Bxg2 19. Rg3 Bd5 20. Kh2 Ng6 21. Rg1 Bd6 22. h4 Nxh4 23. a4 Ng6 24. Qe3 Qb8 25. f4 Rd8 26. Bc1 Qb7 27. Ndf3 Bxf3 28. Bd2 Bd5 29. Bxg6 fxg6 30. Rxc7 Qxc7 31. a5 Qe7 32. Nxg6 hxg6 33. axb6 Kf7 34. Rg3 Rh8+ 35. Rh3 Ng4+ 36. Kg1 Nxe3 37. Rh4 Qxh4 38. Ba5 Qh2# 0-1
+
+Game 54
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Bg4 12. Be2 Bxe2 13. Qxe2 dxc4 14. O-O cxb3 15. Nxb3 Qd5 16. Bb2 Qe4 17. Rac1 Rfc8 18. Rfd1 a6 19. h3 b5 20. Nd4 Bf8 21. a3 Nd5 22. Qd2 Nb6 23. f3 Qe8 24. Nf5 Nc4 25. Qd4 Nxb2 26. Qxb2 g6 27. Qf6 Rxc1 28. Nh6+ Bxh6 29. Qd6 Qxe3+ 30. Kf1 Re8 31. Qb8 Rxd1# 0-1
+
+Game 55
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 e4 10. Nd4 Nc6 11. Be2 Bc5 12. Nxc6 bxc6 13. O-O d4 14. Bxd4 Bxd4 15. exd4 Qxd4 16. Qc2 e3 17. fxe3 Qxe3+ 18. Rf2 Bg4 19. Qd3 Qe5 20. Re1 Rad8 21. Nf3 Qc5 22. Qc2 Bf5 23. Qc1 Ng4 24. Kf1 Qxf2# 0-1
+
+Game 56
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Bxb1 6. Rxb1 e6 7. Nf3 Bb4+ 8. Bd2 Qe7 9. a3 Bxd2+ 10. Nxd2 O-O 11. Be2 Nbd7 12. Qb3 Rfb8 13. O-O a5 14. Rfc1 a4 15. Qc2 b5 16. cxd5 cxd5 17. Ra1 b4 18. Qd1 g6 19. Nf3 bxa3 20. bxa3 Rb3 21. Ne5 Nxe5 22. dxe5 Ne4 23. Bf3 Ng5 24. h4 Nxf3+ 25. Kh1 Qxh4# 0-1
+
+Game 57
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "40"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Be6 6. Qb3 Qb6 7. Nc3 dxc4 8. Bxc4 Bxc4 9. Qxc4 e6 10. Nf3 Be7 11. O-O O-O 12. e4 Qa6 13. Qxa6 Nxa6 14. a3 Rfd8 15. Rd1 c5 16. Bg5 cxd4 17. Nxd4 h6 18. Be3 Ng4 19. Ndb5 Nxe3 20. Nb1 Rxd1# 0-1
+
+Game 58
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "46"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Re8 12. Re1 Rc8 13. h3 Bd6 14. Ne5 dxc4 15. Nxf7 Kxf7 16. Nxc4 Bb4 17. Bc3 Bxc3 18. Rxc3 Kg8 19. Nd6 Rxc3 20. Bc4 Nf8 21. Nxe8 Qxe8 22. Qa1 Qg6 23. Ba6 Qxg2# 0-1
+
+Game 59
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 e4 10. Nd4 Nc6 11. Be2 Bc5 12. Nxc6 bxc6 13. O-O d4 14. Bxd4 Bxd4 15. exd4 Qxd4 16. Qc2 e3 17. fxe3 Qxe3+ 18. Rf2 Bg4 19. Qd3 Qe5 20. Re1 Rad8 21. Nf3 Qc5 22. Qc2 Bf5 23. Qc1 Ng4 24. Kf1 Qxf2# 0-1
+
+Game 60
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "70"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Bb4 14. Red1 dxc4 15. bxc4 Qa8 16. a3 Bd6 17. h3 h6 18. Bb1 Bf4 19. Rc3 b5 20. d5 Re8 21. d6 Bxd6 22. Rcc1 bxc4 23. Nxc4 Bf4 24. Nd6 Bxd6 25. Rxd6 Rxc1+ 26. Bxc1 Qb8 27. Qd3 Be4 28. Qd1 Bxf3 29. gxf3 Qxb1 30. Bb2 Qxb2 31. Qa4 Ne5 32. f4 Nf3+ 33. Kg2 Nh4+ 34. Kh2 Qxf2+ 35. Kh1 Qg2# 0-1
+
+Game 61
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "42"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Bg4 12. Be2 Bxe2 13. Qxe2 dxc4 14. O-O cxb3 15. Nxb3 Qd5 16. Bb2 Rac8 17. Rfd1 Qe4 18. Rac1 Qa4 19. Ba1 Rxc1 20. Nc5 Qxd1+ 21. Qf1 Qxf1# 0-1
+
+Game 62
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "112"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 Qc7 12. O-O b6 13. Bf3 Rb8 14. Rc1 Nd7 15. h3 Rd8 16. Qc2 Bb7 17. Rfd1 Rbc8 18. Qb1 Bc6 19. Ba1 h6 20. Bd4 Qb7 21. Ba1 Nc5 22. Bd4 Bxf3 23. Nxf3 Ne4 24. Nd2 Nxd2 25. Rxd2 Qa6 26. Rdc2 Ba3 27. Bb2 Bxb2 28. Qxb2 Rc5 29. Kh1 Rd3 30. Qb1 Qc8 31. Rd1 Rxd1+ 32. Qxd1 Rxc4 33. Rxc4 Qxc4 34. a4 g6 35. Qd8+ Kg7 36. Qd1 a6 37. Qa1+ Kg8 38. Kg1 Qc5 39. Kh1 b5 40. a5 b4 41. Qa4 Qc3 42. Qe8+ Kg7 43. Qa8 Qa1+ 44. Kh2 Qxa5 45. Qb8 Qc5 46. Qd8 Qe5+ 47. g3 b3 48. Qb6 b2 49. Qb4 a5 50. Qxb2 Qxb2 51. Kg2 a4 52. g4 a3 53. Kf3 a2 54. g5 a1=Q 55. Kf4 Qxf2+ 56. Kg4 h5# 0-1
+
+Game 63
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Bg4 12. Be2 Bxe2 13. Qxe2 dxc4 14. O-O cxb3 15. Nxb3 Qd5 16. Bb2 Qe4 17. Rac1 Rfc8 18. Rfd1 a6 19. h3 b5 20. Nd4 Bf8 21. a3 Nd5 22. Qd2 Nb6 23. f3 Qe8 24. Nf5 Nc4 25. Qd4 Nxb2 26. Qxb2 g6 27. Qf6 Rxc1 28. Nh6+ Bxh6 29. Qd6 Qxe3+ 30. Kf1 Re8 31. Qb8 Rxd1# 0-1
+
+Game 64
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Rxd4 18. Rf1 Qa5+ 19. b4 Qxb4# 0-1
+
+Game 65
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "36"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 a6 9. Be2 dxc4 10. Nxc4 b5 11. Bf3 bxc4 12. Bxa8 Qa5+ 13. Ke2 c3 14. Qe1 Bb4 15. Bc1 e5 16. Nc2 Qb5+ 17. Kf3 e4+ 18. Kf4 Bd6# 0-1
+
+Game 66
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Re8 13. h3 Bf8 14. Ne5 dxc4 15. bxc4 Nxe5 16. Rxe5 g6 17. Bf1 Bh6 18. Re1 Nh5 19. Rc2 Bc6 20. Rc1 Ba4 21. Nb3 Bxc1 22. Qxc1 Bc6 23. Nd2 b5 24. c5 Qg5 25. Bxb5 Qxg2# 0-1
+
+Game 67
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Rxd4 18. Rf1 Qa5+ 19. b4 Qxb4# 0-1
+
+Game 68
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "44"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 a6 9. Be2 dxc4 10. Nxc4 b5 11. Bf3 bxc4 12. Bxa8 Qa5+ 13. Ke2 e5 14. Nc6 Nxc6 15. Bxc6 c3 16. Bc1 Qc5 17. Ba4 Bf5 18. f3 Rd8 19. Qe1 c2 20. e4 Nxe4 21. Bb5 Qxb5+ 22. Ke3 Bc5# 0-1
+
+Game 69
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "52"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 e6 5. Nc3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 b4 9. Ne4 Nxe4 10. Bxe4 Bb7 11. O-O Be7 12. Qc2 h6 13. a3 a5 14. Bd2 O-O 15. axb4 axb4 16. Bh7+ Kh8 17. Be4 f5 18. Bxc6 Rc8 19. Ba4 Rxc2 20. Ne5 Rxd2 21. Bxd7 Kh7 22. Nc4 Rc2 23. f4 Rxg2+ 24. Kh1 Rg4+ 25. Bc6 Bxc6+ 26. Rf3 Bxf3# 0-1
+
+Game 70
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nbd7 10. Be2 dxc4 11. Bxc4 a6 12. a4 b6 13. O-O Bb7 14. Qe2 Qb8 15. Rfd1 Rd8 16. h3 h6 17. Rac1 Nc5 18. Ne5 b5 19. axb5 axb5 20. Bxb5 Ra2 21. Ndf3 Rxd1+ 22. Rxd1 Rxb2 23. Qxb2 Bxf3 24. gxf3 Qxb5 25. b4 Ncd7 26. Ng4 Nxg4 27. hxg4 Ne5 28. Kg2 Ng6 29. f4 Nh4+ 30. Kh3 Qc6 31. Kg3 Qg2# 0-1
+
+Game 71
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "40"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 Qc7 11. a4 O-O 12. Bd2 e5 13. Bd3 exd4 14. Ne4 Nxe4 15. Bxe4 dxe3 16. Bxh7+ Kxh7 17. Bxe3 Bb4+ 18. Kf1 Qd6 19. Bc1 Qd1+ 20. Ne1 Qxe1# 0-1
+
+Game 72
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Rb8 12. Bxc6 a6 13. Ne4 Rc8 14. Bb7 Rc7 15. Nxf6+ Qxf6 16. Bxa6 Bb4+ 17. Bd2 Bxd2+ 18. Nxd2 Qg5 19. O-O Qa5 20. Ne4 Qxa6 21. a4 Qd3 22. f3 Qxe3+ 23. Kh1 Rc2 24. Rfc1 Qxc1+ 25. Rxc1 Rxc1# 0-1
+
+Game 73
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "62"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 b6 12. O-O Qc7 13. Bf3 Bb7 14. Qe2 Bxf3 15. Nxf3 Rac8 16. Rac1 Ne4 17. Rfd1 Rfd8 18. Qc2 Qc6 19. Ne5 Qa8 20. f3 Nd6 21. c5 bxc5 22. Bxc5 Nf5 23. Rxd8+ Bxd8 24. Qd2 h6 25. Qd7 Be7 26. Ba3 Rd8 27. Qa4 Qd5 28. Nc6 Bxa3 29. Qxa3 Qd2 30. Qe7 Qxc1+ 31. Kf2 Rd2# 0-1
+
+Game 74
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "54"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Re8 13. h3 Rc7 14. a3 Nf8 15. Ne5 N6d7 16. b4 Nxe5 17. dxe5 Ng6 18. Bf1 Qa8 19. cxd5 Rxc1 20. Qxc1 Bxd5 21. Qb1 Rd8 22. Ne4 Nh4 23. Qc2 a5 24. Qe2 h5 25. b5 Bc5 26. Nxc5 Bxg2 27. Bxg2 Qxg2# 0-1
+
+Game 75
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "82"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Bb4 14. Red1 Qa8 15. Nf1 dxc4 16. Rxc4 Bd6 17. Rxc7 Bxc7 18. Ne3 Bf4 19. Ne5 Bxe3 20. fxe3 Nxe5 21. dxe5 Ne4 22. Bd4 Rc8 23. Qg4 h6 24. h3 Ng5 25. h4 Nf3+ 26. Kf2 Nxd4 27. exd4 a5 28. Kg1 a4 29. Kh2 axb3 30. axb3 Rc3 31. Bc4 Bd5 32. Rb1 Bf3 33. Qg3 Rc2 34. Rg1 Rd2 35. Bd3 Rxd3 36. gxf3 g6 37. h5 g5 38. f4 Qe4 39. Rg2 Rxg3 40. Kxg3 Qxf4+ 41. Kh3 Qh4# 0-1
+
+Game 76
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "74"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Bxb1 6. Rxb1 e6 7. Nf3 Bb4+ 8. Bd2 Qe7 9. a3 Bxd2+ 10. Nxd2 O-O 11. Be2 Nbd7 12. Qb3 Rfb8 13. O-O a5 14. Rfc1 a4 15. Qc2 g6 16. b4 axb3 17. Rxb3 Rxa3 18. Rbb1 Ra7 19. Qb2 Rba8 20. h3 Ra2 21. Qxb7 Rb8 22. Qc7 Rxb1 23. Qc8+ Qf8 24. Qxf8+ Kxf8 25. Nxb1 Rxe2 26. Kh2 Rxf2 27. Kg1 Rb2 28. Na3 Ne4 29. h4 Rb3 30. cxd5 cxd5 31. Nc2 Ndf6 32. g4 Nxg4 33. Na1 Rb2 34. h5 Nxe3 35. Rc8+ Kg7 36. hxg6 Rg2+ 37. Kh1 Ng3# 0-1
+
+Game 77
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "40"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Be6 6. Qb3 Qb6 7. Nc3 dxc4 8. Bxc4 Bxc4 9. Qxc4 e6 10. Nf3 Be7 11. O-O O-O 12. e4 Qa6 13. Qxa6 Nxa6 14. a3 Rfd8 15. Rd1 c5 16. Bg5 cxd4 17. Nxd4 h6 18. Be3 Ng4 19. Ndb5 Nxe3 20. Nb1 Rxd1# 0-1
+
+Game 78
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Rxd4 18. Rf1 Qa5+ 19. b4 Qxb4# 0-1
+
+Game 79
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "80"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 dxc4 14. bxc4 Bb4 15. Red1 Qa8 16. Bc2 Rfc8 17. Bb3 Nh5 18. Qe3 Bd6 19. g3 Nhf6 20. Qe2 h6 21. Ne1 Re8 22. Nf1 e5 23. d5 Nc5 24. Nd3 Nxd3 25. Qxd3 Bc8 26. Ne3 Bd7 27. Bc2 Qd8 28. Re1 e4 29. Qd2 Bh3 30. Ba4 Nd7 31. Qd1 Qg5 32. Ng2 Re7 33. Bb5 Bg4 34. Qd4 Ne5 35. Nh4 Bc5 36. Qxe4 Nxc4 37. Rxc4 Qd2 38. Ng6 Qxf2+ 39. Kh1 Bf3+ 40. Qxf3 Qxf3# 0-1
+
+Game 80
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "56"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nbd7 10. Be2 dxc4 11. Bxc4 a6 12. a4 b6 13. O-O Bb7 14. Qe2 Bd6 15. Rfd1 Qe7 16. h3 Red8 17. Rac1 Ba3 18. Nb1 Bxb2 19. Qxb2 Nd5 20. Bf1 Nc5 21. Nbd2 Nb4 22. Ne1 Bd5 23. Nc4 Qc7 24. Nc2 Bxc4 25. Rxd8+ Rxd8 26. Nxb4 Bxf1 27. Rxf1 a5 28. Rd1 Rxd1# 0-1
+
+Game 81
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Nc6 9. Be2 Nxd4 10. Bxd4 dxc4 11. bxc4 Qc7 12. O-O b6 13. Bf3 Rb8 14. Rc1 Rd8 15. Qa4 e5 16. Bc3 Bf5 17. Rfd1 Rbc8 18. Qb5 Bd6 19. h3 Qe7 20. Bb2 Bd3 21. Bc6 Bb8 22. Nf3 e4 23. Nd4 Rxd4 24. Bxd4 Qc7 25. Be8 Qh2# 0-1
+
+Game 82
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "60"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 Re8 9. N4f3 Nc6 10. a3 e5 11. Nxe5 Nxe5 12. Bxe5 Bc5 13. Nf3 Bg4 14. Bd4 Bxf3 15. gxf3 Qb6 16. Be2 Rad8 17. Bxc5 Qxc5 18. b4 Qc8 19. Qd4 dxc4 20. Qxc4 Qh3 21. Rd1 Qg2 22. Rf1 Qxh2 23. Qb3 g6 24. Bc4 Rxd1+ 25. Qxd1 Rc8 26. Bxf7+ Kxf7 27. Qb3+ Ke7 28. b5 Qe5 29. Qb2 Qxb2 30. Rh1 Rc1# 0-1
+
+Game 83
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "42"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 Nc6 10. Nxe5 Nxe5 11. Bxe5 Re8 12. Bd4 Bb4 13. Be2 Ne4 14. c5 Bxd2+ 15. Qxd2 Nxd2 16. Kxd2 Re4 17. Ke1 Qa5+ 18. Kf1 Rxd4 19. Rd1 Rxd1+ 20. Bxd1 Qd2 21. Rg1 Qxd1# 0-1
+
+Game 84
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "40"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 Qc7 11. a4 O-O 12. Bd2 e5 13. Bd3 exd4 14. Ne4 Nxe4 15. Bxe4 dxe3 16. Bxh7+ Kxh7 17. Bxe3 Bb4+ 18. Kf1 Qd7 19. Bc1 Qd1+ 20. Ne1 Qxe1# 0-1
+
+Game 85
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 e5 9. N4f3 e4 10. Nd4 Nc6 11. Be2 Bc5 12. Nxc6 bxc6 13. O-O d4 14. Bxd4 Bxd4 15. exd4 Qxd4 16. Qc2 e3 17. fxe3 Qxe3+ 18. Rf2 Bg4 19. Qd3 Qe5 20. Re1 Rad8 21. Nf3 Qc5 22. Qc2 Bf5 23. Qc1 Ng4 24. Kf1 Qxf2# 0-1
+
+Game 86
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Rb8 12. Bxc6 a6 13. Ne4 Rc8 14. Bb7 Rc7 15. Nxf6+ Qxf6 16. Bxa6 Bb4+ 17. Bd2 Bxd2+ 18. Nxd2 Qg5 19. O-O Qa5 20. Ne4 Qxa6 21. a4 Qd3 22. f3 Qxe3+ 23. Kh1 Rc2 24. Rfc1 Qxc1+ 25. Rxc1 Rxc1# 0-1
+
+Game 87
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 b6 9. Be2 Bb7 10. O-O Nbd7 11. Rc1 Rc8 12. a3 h6 13. b4 a5 14. Qb3 axb4 15. axb4 Bd6 16. Nb5 Bb8 17. Rfd1 Qe7 18. h3 dxc4 19. Nxc4 Ne4 20. f3 Ng3 21. Bd3 Qg5 22. Nd4 b5 23. Nxb5 Bxf3 24. Kh2 Ne2+ 25. Kh1 Qxg2# 0-1
+
+Game 88
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "50"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 b6 5. Nc3 Bd6 6. Qa4+ c6 7. Bd3 dxc4 8. Qxc4 Ba6 9. Qxa6 Nxa6 10. Bxa6 O-O 11. Bb7 Rb8 12. Bxc6 a6 13. Ne4 Rc8 14. Bb7 Rc7 15. Nxf6+ Qxf6 16. Bxa6 Bb4+ 17. Bd2 Bxd2+ 18. Nxd2 Qg5 19. O-O Qa5 20. Ne4 Qxa6 21. a4 Qd3 22. f3 Qxe3+ 23. Kh1 Rc2 24. Rfc1 Qxc1+ 25. Rxc1 Rxc1# 0-1
+
+Game 89
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "48"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 b6 7. Nbd2 Nbd7 8. Bd3 Bb7 9. Rc1 c5 10. O-O cxd4 11. Nxd4 a6 12. Be2 Rc8 13. N4f3 dxc4 14. Rxc4 Rxc4 15. Nxc4 b5 16. Nce5 Nxe5 17. Nxe5 Qa8 18. Bf3 Rc8 19. Qe2 Bxf3 20. Nxf3 Qe4 21. Nd4 e5 22. f3 Qg6 23. Nxb5 Rc2 24. Qc4 Qxg2# 0-1
+
+Game 90
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "42"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 a6 5. Nc3 c5 6. a3 dxc4 7. Bxc4 b5 8. Ba2 Nbd7 9. O-O Bb7 10. e4 cxd4 11. Nxd4 Bc5 12. Be3 O-O 13. Nxe6 fxe6 14. e5 Bxe3 15. exf6 Bxf2+ 16. Rxf2 Rxf6 17. Rxf6 Nxf6 18. Bxe6+ Kf8 19. Kh1 Qe7 20. Ba2 Rd8 21. Nb1 Rxd1# 0-1
+
+Game 91
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "56"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Bb4 14. Red1 Nh5 15. g3 Nhf6 16. a3 Be7 17. Ne5 dxc4 18. Rxc4 Rxc4 19. bxc4 Nxe5 20. dxe5 Nd7 21. Be4 Ba8 22. Bxh7+ Kxh7 23. Ne4 Qc7 24. Qh5+ Kg8 25. Rd4 Nxe5 26. Ba1 f5 27. Nd2 Qc6 28. Qe8 Qh1# 0-1
+
+Game 92
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "40"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Re8 12. Re1 Rc8 13. h3 Bd6 14. Ne5 dxc4 15. Nxf7 Kxf7 16. Nxc4 Bb8 17. Ne5+ Nxe5 18. dxe5 Rxc1 19. Bxc1 Qd5 20. Bxh7 Qxg2# 0-1
+
+Game 93
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "66"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 c5 5. a3 dxc4 6. Bxc4 a6 7. O-O b5 8. Be2 Nbd7 9. dxc5 Bxc5 10. b4 Be7 11. a4 bxa4 12. Qxa4 O-O 13. Rd1 Rb8 14. Bd2 Nd5 15. Nd4 Nxb4 16. Be1 h6 17. h3 Qc7 18. Bf1 Ne5 19. f4 Bd7 20. Qa5 Qxa5 21. Rxa5 Nec6 22. Nxc6 Bxc6 23. Bxb4 Rxb4 24. Rxa6 Ba8 25. Nd2 Bc5 26. Nc4 Bd5 27. Kh1 Bxc4 28. Bxc4 Rxc4 29. Rc6 Rb8 30. Rc7 Rb2 31. Rd8+ Kh7 32. g3 Rc1+ 33. Rd1 Rxd1# 0-1
+
+Game 94
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "44"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 c5 6. Bb2 O-O 7. Nbd2 Nbd7 8. Rc1 cxd4 9. exd4 b6 10. Bd3 Bb7 11. O-O Rc8 12. Re1 Rc7 13. Qe2 Bb4 14. Red1 Qa8 15. Nf1 dxc4 16. Rxc4 Bxf3 17. gxf3 Bd6 18. Ne3 Nd5 19. Nxd5 Qxd5 20. Bc1 Nf6 21. f4 g6 22. Kf1 Qh1# 0-1
+
+Game 95
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "68"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 e6 5. Nc3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 b4 9. Ne4 Nxe4 10. Bxe4 Bb7 11. O-O Be7 12. Qc2 Qb6 13. a3 b3 14. Qc3 a5 15. Bd2 O-O 16. Rfc1 Rfc8 17. Qc4 Nf6 18. Bd3 Ba6 19. Qc3 Nd5 20. Bxh7+ Kxh7 21. Qxa5 Qb7 22. e4 Be2 23. exd5 Rxa5 24. dxc6 Rxc6 25. Rxc6 Qxc6 26. Re1 Bxf3 27. gxf3 Rf5 28. Re3 Qc2 29. Bb4 Bxb4 30. axb4 Qb1+ 31. Kg2 Rg5+ 32. Kh3 Qf5+ 33. Kh4 Rh5+ 34. Kg3 Qg5# 0-1
+
+Game 96
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 b6 7. Nbd2 Nbd7 8. Bd3 dxc4 9. bxc4 c5 10. O-O Qc7 11. Qe2 Bb7 12. Rfe1 Rfd8 13. Rad1 Rac8 14. h3 Nf8 15. Ne5 Ng6 16. Nef3 cxd4 17. Nxd4 Nh4 18. N2f3 Nxf3+ 19. Kh1 Qh2# 0-1
+
+Game 97
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "38"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. e3 Be7 5. b3 O-O 6. Bb2 c5 7. Nbd2 cxd4 8. Nxd4 a6 9. Be2 dxc4 10. Nxc4 b5 11. Bf3 bxc4 12. Bxa8 Qa5+ 13. Ke2 e5 14. Nc6 Nxc6 15. Bxc6 c3 16. Bc1 Qc7 17. Ba4 Bf5 18. Kf1 Rd8 19. Kg1 Rxd1# 0-1
+
+Game 98
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "80"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Bxb1 6. Rxb1 e6 7. Nf3 Bb4+ 8. Bd2 Qe7 9. a3 Bxd2+ 10. Nxd2 O-O 11. Be2 a5 12. Qb3 a4 13. Qc2 Nbd7 14. O-O g6 15. b4 axb3 16. Qc3 Rxa3 17. Rxb3 Rfa8 18. Rfb1 Rxb3 19. Qxb3 b6 20. h3 Kg7 21. Bf1 Qa3 22. g3 Qxb3 23. Nxb3 Kf8 24. Rc1 Ra3 25. Nd2 Ra2 26. Nf3 c5 27. h4 Ke7 28. Bg2 h6 29. h5 g5 30. g4 Nxg4 31. Nh2 Nxh2 32. cxd5 Ng4 33. Rb1 Nxf2 34. dxc5 bxc5 35. dxe6 fxe6 36. e4 Nd3 37. Bf1 c4 38. Rc1 N7e5 39. Rxc4 Nf3+ 40. Kh1 Rh2# 0-1
+
+Game 99
+PGN
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "0-1"]
+[Moves "44"]
+
+1. d4 Nf6 2. c4 c6 3. Nf3 d5 4. e3 Bf5 5. Nh4 Be6 6. Qb3 Qc7 7. Nf3 Nbd7 8. Bd2 dxc4 9. Bxc4 Bxc4 10. Qxc4 e5 11. Qc2 Bd6 12. Nc3 O-O 13. h3 Rfe8 14. Nxe5 Nxe5 15. dxe5 Rxe5 16. O-O Rae8 17. Rad1 Qe7 18. a3 h5 19. Kh1 Bb8 20. Be1 Qc7 21. Bd2 Rxe3 22. Nd5 Qh2# 0-1
+
+Evolution
+[30, 66, 92, 42, 32, 46, 66, 62, 62, 86, 38, 66, 50, 34, 46, 62, 104, 28, 50, 54, 28, 40, 48, 102, 48, 44, 38, 72, 28, 38, 46, 46, 66, 38, 56, 74, 46, 36, 64, 44, 42, 50, 28, 62, 60, 78, 48, 68, 48, 42, 52, 70, 76, 62, 48, 50, 40, 46, 48, 70, 42, 112, 62, 38, 36, 50, 38, 44, 52, 62, 40, 50, 62, 54, 82, 74, 40, 38, 80, 56, 50, 60, 42, 40, 48, 50, 50, 50, 48, 42, 56, 40, 66, 44, 68, 38, 38, 80, 44]
