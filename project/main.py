@@ -2,20 +2,18 @@ from stockfish import Stockfish
 import chess
 import chess.pgn
 from minimax import minimax
-from models import BestMove
-from util import print_white, print_black, to_list
+from util import print_white, print_black
 import matplotlib.pyplot as plt
 
 ENV_PATH = 'stockfish_14.1_win_x64_avx2.exe'
 FILE = 'stats.txt'
-DEPTH = 1
+DEPTH = 2
 
 
 def get_best_move(agent: Stockfish):
     game = chess.Board(agent.get_fen_position())
 
-    _eval = minimax(game, 0, DEPTH)
-
+    _eval = minimax(game, 0, True, -50000, 50000, DEPTH)
     return _eval['move']
 
 
