@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 ENV_PATH = 'stockfish_14.1_win_x64_avx2.exe'
 FILE = 'stats.txt'
-DEPTH = 2
+DEPTH = 3
 
 
 def get_best_move(agent: Stockfish):
@@ -36,6 +36,7 @@ def start():
     total_moves = 0
 
     while True:
+        print("Move:", total_moves)
         # ---------------================== Agent | White ==================---------------
         print_white(game)
         # moves = to_list(game.legal_moves)
@@ -50,8 +51,6 @@ def start():
         game.push(chess.Move.from_uci(agent_move))
 
         node = node.add_variation(chess.Move.from_uci(agent_move))
-
-        total_moves += 1
 
         if game.is_checkmate():
             print("Agent wins.")

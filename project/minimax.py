@@ -22,11 +22,12 @@ def minimax(game: chess.Board, depth, maximizing, alpha, beta, max_depth):
     # if state in cache:
     #     return cache[state]
 
-    if depth == max_depth:
+    if depth == max_depth or game.is_checkmate():
         agent.set_fen_position(current_fen)
         _eval = agent.get_evaluation()
+        check_mate(_eval, depth + 1)
 
-        cache[state] = _eval
+        # cache[state] = _eval
         return _eval
 
     moves = to_list(game.legal_moves)
@@ -35,15 +36,9 @@ def minimax(game: chess.Board, depth, maximizing, alpha, beta, max_depth):
     if maximizing:
         best_val = -INFINITY
         for move in moves:
-            next_game = chess.Board(current_fen)
-            next_game.push(chess.Move.from_uci(move))
-            _eval = minimax(next_game, depth + 1, False, alpha, beta, max_depth)
-
-            if _eval['type'] == 'mate':
-                if depth % 2 == 0:
-                    _eval['value'] = 10000
-                if depth % 2 == 1:
-                    _eval['value'] = -10000
+            game.push(chess.Move.from_uci(move))
+            _eval = minimax(game, depth + 1, False, alpha, beta, max_depth)
+            game.pop()
 
             value = _eval['value']
 
@@ -53,6 +48,7 @@ def minimax(game: chess.Board, depth, maximizing, alpha, beta, max_depth):
                 best_eval['move'] = move
 
             alpha = max(alpha, _eval['value'])
+
             if beta <= alpha:
                 break
 
@@ -63,15 +59,9 @@ def minimax(game: chess.Board, depth, maximizing, alpha, beta, max_depth):
         best_val = +INFINITY
 
         for move in moves:
-            next_game = chess.Board(current_fen)
-            next_game.push(chess.Move.from_uci(move))
-            _eval = minimax(next_game, depth + 1, True, alpha, beta, max_depth)
-
-            if _eval['type'] == 'mate':
-                if depth % 2 == 0:
-                    _eval['value'] = 10000
-                if depth % 2 == 1:
-                    _eval['value'] = -10000
+            game.push(chess.Move.from_uci(move))
+            _eval = minimax(game, depth + 1, True, alpha, beta, max_depth)
+            game.pop()
 
             value = _eval['value']
 
@@ -82,8 +72,20 @@ def minimax(game: chess.Board, depth, maximizing, alpha, beta, max_depth):
 
             beta = min(beta, _eval['value'])
 
+            if game.is_checkmate():
+                game.pop()
+                return _eval
+
             if beta <= alpha:
                 break
 
         cache[state] = best_eval
         return best_eval
+
+
+def check_mate(_eval, depth):
+    if _eval['type'] == 'mate':
+        if depth % 2 == 0:
+            _eval['value'] = 10000
+        if depth % 2 == 1:
+            _eval['value'] = -10000
