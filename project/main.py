@@ -98,7 +98,7 @@ def main():
         f.write(f'Game starts. Depth {DEPTH}\n')
 
     x = []
-    for i in range(0, 10):
+    for i in range(0, 30):
         with open(FILE, 'a') as f:
             f.write(f"Game {i}\n")
 
